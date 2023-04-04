@@ -1,0 +1,81 @@
+{
+  "Files": [
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/scopedcss/bundle/SmartCalc v3.0.styles.css",
+      "PackagePath": "staticwebassets/SmartCalc v3.0.styles.css"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/open-iconic/FONT-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/open-iconic/ICON-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/open-iconic/README.md",
+      "PackagePath": "staticwebassets/css/open-iconic/README.md"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.eot"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.otf"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.svg"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.ttf"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.woff"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/opt/goinfre/ajhin/github/cd/APC2_SmartCalc_v3.0_Desktop_C_sharp-2-master/src/SmartCalc v3.0/SmartCalc v3.0/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "obj/Debug/net7.0-maccatalyst/maccatalyst-x64/staticwebassets/msbuild.SmartCalc v3.0.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0-maccatalyst/maccatalyst-x64/staticwebassets/msbuild.build.SmartCalc v3.0.props",
+      "PackagePath": "build\\SmartCalc v3.0.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0-maccatalyst/maccatalyst-x64/staticwebassets/msbuild.buildMultiTargeting.SmartCalc v3.0.props",
+      "PackagePath": "buildMultiTargeting\\SmartCalc v3.0.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0-maccatalyst/maccatalyst-x64/staticwebassets/msbuild.buildTransitive.SmartCalc v3.0.props",
+      "PackagePath": "buildTransitive\\SmartCalc v3.0.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/SmartCalc v3.0.props" />
+</Project>

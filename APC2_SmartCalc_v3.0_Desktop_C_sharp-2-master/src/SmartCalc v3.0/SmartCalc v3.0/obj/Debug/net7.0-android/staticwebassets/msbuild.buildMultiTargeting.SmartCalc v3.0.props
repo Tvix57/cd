@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/SmartCalc v3.0.props" />
+</Project>
