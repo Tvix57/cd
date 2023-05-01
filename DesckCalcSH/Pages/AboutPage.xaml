@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="DesckCalcSH.Pages.AboutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout Margin="20">
+        <Label Text="Primary colors" />
+        <BoxView Color="Red" />
+        <BoxView Color="Yellow" />
+        <BoxView Color="Blue" />
+        <Label Text="Secondary colors" />
+        <BoxView Color="Green" />
+        <BoxView Color="Orange" />
+        <BoxView Color="Purple" />
+    </StackLayout>
+</ContentPage>

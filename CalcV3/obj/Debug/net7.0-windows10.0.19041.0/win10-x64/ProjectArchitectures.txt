@@ -1,0 +1,1 @@
+C:\Users\dm\Desktop\std\cd\CalcV3\CalcV3.csproj;x64

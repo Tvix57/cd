@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DesckCalcSH.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DesckCalcSH.Pages"
+    xmlns:main="clr-namespace:DesckCalcSH"
+    MinimumWidthRequest="500">
+
+    <FlyoutItem Title="Calculator" Icon="calc.png">
+        <ShellContent
+            Title="Calculator"
+            ContentTemplate="{DataTemplate main:MainPage}"
+            Icon="calc.png"
+            Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Chart" Icon="chart.png">
+        <ShellContent
+            Title="Chart"
+            ContentTemplate="{DataTemplate local:ChartPage}"
+            Icon="chart.png"
+            Route="ChartPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="History" Icon="history.png">
+        <ShellContent
+            Title="History page"
+            ContentTemplate="{DataTemplate local:HistoryPage}"
+            Icon="history.png"
+            Route="HistoryPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="About" Icon="about.png">
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Icon="about.png"
+            Route="AboutPage" />
+    </FlyoutItem>
+</Shell>

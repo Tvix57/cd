@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="DesckCalcSH.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+
+    <Grid
+        Padding="5,0"
+        BackgroundColor="Gray"
+        ColumnSpacing="1"
+        MinimumHeightRequest="300"
+        MinimumWidthRequest="400"
+        RowSpacing="1">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Editor
+            x:Name="result"
+            Grid.Row="0"
+            Grid.ColumnSpan="5"
+            Background="White"
+            FontAttributes="Bold"
+            FontSize="Large"
+            HorizontalTextAlignment="End"
+            Text="0"
+            TextColor="Orange"
+            VerticalTextAlignment="Center" />
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            Padding="0"
+            BackgroundColor="LightGrey"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="X"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="3"
+            Padding="0"
+            BackgroundColor="LightGrey"
+            Clicked="OnClearClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="C"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="4"
+            Padding="0"
+            BackgroundColor="LightGrey"
+            Clicked="OnClearClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="AC"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="4"
+            Padding="0"
+            BackgroundColor="WhiteSmoke"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="9"
+            TextColor="Black" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="3"
+            Padding="0"
+            BackgroundColor="WhiteSmoke"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="8"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="2"
+            Padding="0"
+            BackgroundColor="WhiteSmoke"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="7"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="3"
+            Grid.Column="4"
+            Padding="0"
+            BackgroundColor="WhiteSmoke"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="6"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="3"
+            Grid.Column="3"
+            Padding="0"
+            BackgroundColor="WhiteSmoke"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="5"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="3"
+            Grid.Column="2"
+            Padding="0"
+            BackgroundColor="WhiteSmoke"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="4"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="4"
+            Padding="0"
+            BackgroundColor="WhiteSmoke"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="3"
+            TextColor="Black" />
+        <Button
+            Grid.Row="4"
+            Grid.Column="3"
+            Padding="0"
+            BackgroundColor="WhiteSmoke"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="2"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="2"
+            Padding="0"
+            BackgroundColor="WhiteSmoke"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="1"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="5"
+            Grid.Column="2"
+            Padding="0"
+            BackgroundColor="WhiteSmoke"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="0"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="5"
+            Grid.Column="4"
+            Padding="0"
+            BackgroundColor="Orange"
+            Clicked="OnEqualClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="="
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="5"
+            Grid.Column="3"
+            Padding="0"
+            BackgroundColor="WhiteSmoke"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="."
+            TextColor="Black" />
+
+
+        <Button
+            Grid.Row="5"
+            Grid.Column="1"
+            Padding="0"
+            BackgroundColor="LightGrey"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="+"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="1"
+            Padding="0"
+            BackgroundColor="LightGrey"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="-"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            Padding="0"
+            BackgroundColor="LightGrey"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="*"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+            Padding="0"
+            BackgroundColor="LightGrey"
+            Clicked="OnNumberClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="/"
+            TextColor="Black" />
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Padding="0"
+            Clicked="OnShowFunctionClick"
+            FontSize="Large"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40"
+            Text="&lt;&lt;"
+            TextColor="Black" />
+
+        <Grid
+            x:Name="dropdown"
+            Grid.Row="1"
+            Grid.RowSpan="5"
+            Grid.Column="0"
+            IsVisible="False"
+            MinimumWidthRequest="150"
+            WidthRequest="150">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                Padding="0"
+                Text="sin"
+                TextColor="Black" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                Padding="0"
+                Text="asin"
+                TextColor="Black" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                Padding="0"
+                Text="cos"
+                TextColor="Black" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="1"
+                Padding="0"
+                Text="acos"
+                TextColor="Black" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                Padding="0"
+                Text="tan"
+                TextColor="Black" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="1"
+                Padding="0"
+                Text="atan"
+                TextColor="Black" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="0"
+                Padding="0"
+                Text="log"
+                TextColor="Black" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                Padding="0"
+                Text="ln"
+                TextColor="Black" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="0"
+                Padding="0"
+                Text="("
+                TextColor="Black" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                Padding="0"
+                Text=")"
+                TextColor="Black" />
+            <Button
+                Grid.Row="4"
+                Grid.Column="0"
+                Padding="0"
+                Text="^"
+                TextColor="Black" />
+            <Button
+                Grid.Row="4"
+                Grid.Column="1"
+                Padding="0"
+                Text="Sqrt"
+                TextColor="Black" />
+            <Button
+                Grid.Row="5"
+                Grid.Column="0"
+                Padding="0"
+                Text="mod"
+                TextColor="Black" />
+            <Button
+                Grid.Row="5"
+                Grid.Column="1"
+                Padding="0"
+                Text="+/-"
+                TextColor="Black" />
+
+        </Grid>
+    </Grid>
+</ContentPage>
