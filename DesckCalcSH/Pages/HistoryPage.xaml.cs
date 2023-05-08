@@ -2,37 +2,19 @@
 
 public partial class HistoryPage : ContentPage
 {
-	int count = 0;
-
-	public HistoryPage()
-	{
+    public HistoryPage() {
 		InitializeComponent();
-	}
-
-/*	private void OnClearClick(object sender, EventArgs e) {
-        Button btn = sender as Button;
-        if (btn.Text == "C") {
-            result.Text = RemoveLast();
-        } else {
-            result.Text = "";
-        }
-    }
-
-    private void OnNumberClick(object sender, EventArgs e) {
-		Button btn = sender as Button;
-		result.Text += btn.Text;
-    }
-
-    private void OnEqualClick(object sender, EventArgs e) {
 
     }
-
-    private void OnShowFunctionClick(object sender, EventArgs e) {
-        dropdown.IsVisible = !dropdown.IsVisible;
+	public void AddResult(string res) {
+		Label lab = new Label();
+		lab.Text = res;
+		history_layout.Add(lab);
     }
-    private string RemoveLast() {
-        string text = result.Text;
-        return text;
-    }*/
+	private void ClearAll(object sender, EventArgs e) {
+        var app = (App)Application.Current;
+        var test = app.MainPage.ClassId;
+        history_layout.Clear();
+    }
 }
 

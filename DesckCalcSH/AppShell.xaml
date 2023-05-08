@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:DesckCalcSH.Pages"
     xmlns:main="clr-namespace:DesckCalcSH"
-    MinimumWidthRequest="500">
+    MaximumHeightRequest="100">
 
     <FlyoutItem Title="Calculator" Icon="calc.png">
         <ShellContent

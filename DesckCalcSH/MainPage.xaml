@@ -2,38 +2,38 @@
 <ContentPage
     x:Class="DesckCalcSH.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    MinimumHeightRequest="300">
 
 
     <Grid
         Padding="5,0"
         BackgroundColor="Gray"
         ColumnSpacing="1"
-        MinimumHeightRequest="300"
-        MinimumWidthRequest="400"
         RowSpacing="1">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
         </Grid.ColumnDefinitions>
 
         <Editor
             x:Name="result"
             Grid.Row="0"
             Grid.ColumnSpan="5"
+            Margin="0"
             Background="White"
             FontAttributes="Bold"
             FontSize="Large"
@@ -49,6 +49,8 @@
             BackgroundColor="LightGrey"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="X"
@@ -61,6 +63,8 @@
             BackgroundColor="LightGrey"
             Clicked="OnClearClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="C"
@@ -73,6 +77,8 @@
             BackgroundColor="LightGrey"
             Clicked="OnClearClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="AC"
@@ -85,6 +91,8 @@
             BackgroundColor="WhiteSmoke"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="9"
@@ -96,6 +104,8 @@
             BackgroundColor="WhiteSmoke"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="8"
@@ -108,6 +118,8 @@
             BackgroundColor="WhiteSmoke"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="7"
@@ -120,6 +132,8 @@
             BackgroundColor="WhiteSmoke"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="6"
@@ -132,6 +146,8 @@
             BackgroundColor="WhiteSmoke"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="5"
@@ -144,6 +160,8 @@
             BackgroundColor="WhiteSmoke"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="4"
@@ -156,6 +174,8 @@
             BackgroundColor="WhiteSmoke"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="3"
@@ -167,6 +187,8 @@
             BackgroundColor="WhiteSmoke"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="2"
@@ -179,6 +201,8 @@
             BackgroundColor="WhiteSmoke"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="1"
@@ -191,6 +215,8 @@
             BackgroundColor="WhiteSmoke"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="0"
@@ -203,6 +229,8 @@
             BackgroundColor="Orange"
             Clicked="OnEqualClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="="
@@ -215,6 +243,8 @@
             BackgroundColor="WhiteSmoke"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="."
@@ -228,6 +258,8 @@
             BackgroundColor="LightGrey"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="+"
@@ -240,6 +272,8 @@
             BackgroundColor="LightGrey"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="-"
@@ -252,6 +286,8 @@
             BackgroundColor="LightGrey"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="*"
@@ -264,6 +300,8 @@
             BackgroundColor="LightGrey"
             Clicked="OnNumberClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="/"
@@ -275,6 +313,8 @@
             Padding="0"
             Clicked="OnShowFunctionClick"
             FontSize="Large"
+            MaximumHeightRequest="100"
+            MaximumWidthRequest="100"
             MinimumHeightRequest="40"
             MinimumWidthRequest="40"
             Text="&lt;&lt;"
@@ -286,6 +326,7 @@
             Grid.RowSpan="5"
             Grid.Column="0"
             IsVisible="False"
+            MaximumWidthRequest="100"
             MinimumWidthRequest="150"
             WidthRequest="150">
             <Grid.RowDefinitions>
@@ -306,24 +347,28 @@
                 Grid.Row="0"
                 Grid.Column="0"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="sin"
                 TextColor="Black" />
             <Button
                 Grid.Row="0"
                 Grid.Column="1"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="asin"
                 TextColor="Black" />
             <Button
                 Grid.Row="1"
                 Grid.Column="0"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="cos"
                 TextColor="Black" />
             <Button
                 Grid.Row="1"
                 Grid.Column="1"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="acos"
                 TextColor="Black" />
             <Button
@@ -336,54 +381,63 @@
                 Grid.Row="2"
                 Grid.Column="1"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="atan"
                 TextColor="Black" />
             <Button
                 Grid.Row="3"
                 Grid.Column="0"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="log"
                 TextColor="Black" />
             <Button
                 Grid.Row="3"
                 Grid.Column="1"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="ln"
                 TextColor="Black" />
             <Button
                 Grid.Row="3"
                 Grid.Column="0"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="("
                 TextColor="Black" />
             <Button
                 Grid.Row="3"
                 Grid.Column="1"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text=")"
                 TextColor="Black" />
             <Button
                 Grid.Row="4"
                 Grid.Column="0"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="^"
                 TextColor="Black" />
             <Button
                 Grid.Row="4"
                 Grid.Column="1"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="Sqrt"
                 TextColor="Black" />
             <Button
                 Grid.Row="5"
                 Grid.Column="0"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="mod"
                 TextColor="Black" />
             <Button
                 Grid.Row="5"
                 Grid.Column="1"
                 Padding="0"
+                MinimumWidthRequest="40"
                 Text="+/-"
                 TextColor="Black" />
 
