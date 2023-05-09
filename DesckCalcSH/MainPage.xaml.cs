@@ -24,9 +24,11 @@ public partial class MainPage : ContentPage
         string calculate_txt = "test";
         result.Text = calculate_txt;
         string tmp = result.Text + "=" + calculate_txt;
- 
+
+        var pat = this.Parent as AppShell;
+        
         var app = (App)Application.Current;
-        var navigationStack = Shell.Current.Navigation.NavigationStack;
+/*        var navigationStack = Shell.Current.Navigation.NavigationStack;
         foreach (var page in navigationStack)
         {
             if (page is Pages.HistoryPage page2)
@@ -34,10 +36,9 @@ public partial class MainPage : ContentPage
                 
                 break;
             }
-        }
-        var history_page = app.MainPage.Navigation.NavigationStack.FirstOrDefault(p => p?.ClassId == "HistoryPage") as Pages.HistoryPage;
-        history_page?.AddResult(tmp);
-
+        }*/
+/*        var history_page = app.MainPage.Navigation.NavigationStack.FirstOrDefault(p => p?.ClassId == "HistoryPage") as Pages.HistoryPage;
+        history_page?.AddResult(tmp);*/
     }
     private void OnShowFunctionClick(object sender, EventArgs e) {
         dropdown.IsVisible = !dropdown.IsVisible;
