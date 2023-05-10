@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-09T17:23:43.719</Modified>
+      <Modified>2023-05-10T13:17:41.359</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-09T17:22:53.756</Modified>
+      <Modified>2023-05-10T13:17:40.736</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\DesckCalcSH.runtimeconfig.json">
       <PackagePath>DesckCalcSH.runtimeconfig.json</PackagePath>
-      <Modified>2023-05-01T03:44:04.745</Modified>
+      <Modified>2023-05-10T13:17:40.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\DesckCalcSH.dll">
       <PackagePath>DesckCalcSH.dll</PackagePath>
-      <Modified>2023-05-09T17:23:41.992</Modified>
+      <Modified>2023-05-10T13:17:38.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>DesckCalcSH.exe</PackagePath>
-      <Modified>2023-05-09T17:23:42.004</Modified>
+      <Modified>2023-05-10T13:17:38.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.2\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -805,6 +805,10 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2022-11-16T01:34:42.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\livecharts.core\0.9.8\lib\netstandard2.0\LiveCharts.dll">
+      <PackagePath>LiveCharts.dll</PackagePath>
+      <Modified>2020-12-31T22:13:44.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\microsoft.extensions.configuration\7.0.0\lib\net7.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
       <Modified>2022-10-18T16:15:22.000</Modified>
@@ -909,6 +913,22 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\skiasharp\2.88.3\lib\net6.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+      <Modified>2022-10-03T22:36:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\skiasharp.views.maui.controls\2.88.3\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Controls.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Controls.dll</PackagePath>
+      <Modified>2022-10-03T22:36:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\skiasharp.views.maui.core\2.88.3\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Core.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Core.dll</PackagePath>
+      <Modified>2022-10-03T22:37:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\skiasharp.views.winui\2.88.3\lib\net6.0-windows10.0.19041.0\SkiaSharp.Views.Windows.dll">
+      <PackagePath>SkiaSharp.Views.Windows.dll</PackagePath>
+      <Modified>2022-10-03T22:36:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\microsoft.graphics.win2d\1.0.4\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2022-10-04T20:41:34.000</Modified>
@@ -917,9 +937,13 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:24.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\skiasharp.nativeassets.win32\2.88.3\runtimes\win-x64\native\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
+      <Modified>2022-10-03T22:36:56.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\DesckCalcSH.deps.json">
       <PackagePath>DesckCalcSH.deps.json</PackagePath>
-      <Modified>2023-05-09T17:23:43.554</Modified>
+      <Modified>2023-05-10T13:17:41.039</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.52\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

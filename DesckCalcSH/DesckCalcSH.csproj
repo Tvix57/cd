@@ -54,12 +54,17 @@
 	  <None Remove="Resources\Images\history.png" />
 	  <None Remove="Resources\Images\menu.png" />
 	</ItemGroup>
-
-	<ItemGroup>
+  <ItemGroup>
+		<PackageReference Include="LiveCharts" Version="0.9.7" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-	</ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
 
-	<ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="2.88.3" />
+  </ItemGroup>
+  
+  <ItemGroup>
 	  <Compile Update="Pages\AboutPage.xaml.cs">
 	    <DependentUpon>AboutPage.xaml</DependentUpon>
 	  </Compile>
@@ -84,7 +89,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Model\" />
+	  <Folder Include="LiveCharts\" />
 	</ItemGroup>
 
+
+  
 </Project>

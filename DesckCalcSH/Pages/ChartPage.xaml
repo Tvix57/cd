@@ -4,14 +4,69 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <StackLayout Margin="20">
-        <Label Text="Primary colors" />
-        <BoxView Color="Red" />
-        <BoxView Color="Yellow" />
-        <BoxView Color="Blue" />
-        <Label Text="Secondary colors" />
-        <BoxView Color="Green" />
-        <BoxView Color="Orange" />
-        <BoxView Color="Purple" />
-    </StackLayout>
+    <Grid
+        Padding="5,0"
+        BackgroundColor="Gray"
+        ColumnSpacing="1"
+        RowSpacing="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Editor
+            x:Name="XminField"
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="0"
+            Background="White"
+            FontAttributes="Bold"
+            FontSize="Large"
+            HorizontalTextAlignment="End"
+            Keyboard="Numeric"
+            Placeholder="X min"
+            TextColor="Orange"
+            VerticalTextAlignment="Center" />
+        <Editor
+            x:Name="XmaxField"
+            Grid.Row="0"
+            Grid.Column="1"
+            Margin="0"
+            Background="White"
+            FontAttributes="Bold"
+            FontSize="Large"
+            HorizontalTextAlignment="End"
+            Keyboard="Numeric"
+            Placeholder="X max"
+            TextColor="Orange"
+            VerticalTextAlignment="Center" />
+        <Editor
+            x:Name="StepField"
+            Grid.Row="0"
+            Grid.Column="2"
+            Margin="0"
+            Background="White"
+            FontAttributes="Bold"
+            FontSize="Large"
+            HorizontalTextAlignment="End"
+            Keyboard="Numeric"
+            Placeholder="Calculate step"
+            TextColor="Orange"
+            VerticalTextAlignment="Center" />
+        <Button
+            Grid.Row="0"
+            Grid.Column="3"
+            Padding="0"
+            Clicked="DrowGraph"
+            FontSize="Large"
+            Text="Drow graph"
+            TextColor="Black" />
+
+    </Grid>
 </ContentPage>

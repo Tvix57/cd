@@ -1,30 +1,36 @@
-﻿namespace DesckCalcSH.Pages;
+﻿using LiveChartsCore;
+using LiveChartsCore.SkiaSharpView;
+
+namespace DesckCalcSH.Pages;
 
 public partial class ChartPage : ContentPage
 {
-	int count = 0;
+    public ISeries[] Series { get; set; }
+        = new ISeries[]
+        {
+            new LineSeries<double>
+            {
+                Values = new double[] { 2, 1, 3, 5, 3, 4, 6 },
+                Fill = null
+            }
+        };
 
-	public ChartPage()
+
+    public ChartPage()
 	{
 		InitializeComponent();
 	}
 
-    /*	private void OnClearClick(object sender, EventArgs e) {
-            Button btn = sender as Button;
-            if (btn.Text == "C") {
-                result.Text = RemoveLast();
-            } else {
-                result.Text = "";
-            }
-        }
-
-
-
-
-
-
-
-
-        }*/
+    private void DrowGraph(object sender, EventArgs e)
+    {
+        /*
+         * 
+         * <PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.3" />
+         * < lvc:CartesianChart
+      Grid.Row = "1"
+      Grid.Column = "0"
+          Series = "{Binding Series}" >
+  </ lvc:CartesianChart >*/
+    }
 }
 

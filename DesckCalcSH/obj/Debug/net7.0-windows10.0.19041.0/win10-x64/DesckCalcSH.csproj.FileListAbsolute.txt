@@ -327,3 +327,9 @@ C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win1
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\about.scale-100.png
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\history.scale-100.png
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menu.scale-100.png
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SkiaSharp.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Maui.Controls.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Maui.Core.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Windows.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\libSkiaSharp.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\LiveCharts.dll
