@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
 namespace DesckCalcSH;
 
 public partial class MainPage : ContentPage
@@ -21,7 +22,8 @@ public partial class MainPage : ContentPage
         }
     }
     private void OnNumberClick(object sender, EventArgs e) {
-        if (result.Text.Length == 0 || result.Text.Contains("([+\\-*\\/^(.]|mod|\\d)$")) // check regular
+        string regex = @"([+\-*/^(.]|mod|\d)$";
+        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, regex)) // check regular
         {
             Button btn = sender as Button;
             result.Text += btn.Text;
@@ -29,10 +31,12 @@ public partial class MainPage : ContentPage
     }
     private void OnOperatorClick(object sender, EventArgs e)
     {
+        string reg1 = @"([*\\/^]|mod)$";
+        string reg2 = @"([\\)x]|\d)$";
         Button btn = sender as Button;
-        if (btn.Text.Contains("([*\\/^]|mod)$"))
+        if (Regex.IsMatch(btn.Text, reg1))
         {
-            if (result.Text.Contains("([\\)x]|\\d)$")) {
+            if (Regex.IsMatch(result.Text, reg2)) {
                 result.Text += btn.Text;
             }
         }

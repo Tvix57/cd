@@ -678,3 +678,13 @@ C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Win32.SystemEvents.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\OpenTK.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\OpenTK.GLControl.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Desktop.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Gtk.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.WindowsForms.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.WPF.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Drawing.Common.dll

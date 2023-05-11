@@ -37,7 +37,7 @@
             FontAttributes="Bold"
             FontSize="Large"
             HorizontalTextAlignment="End"
-            Text="0"
+            Text=""
             TextColor="Orange"
             VerticalTextAlignment="Center" />
 
@@ -385,8 +385,8 @@
                 Grid.Row="2"
                 Grid.Column="1"
                 Padding="0"
-                MinimumWidthRequest="40"
                 Clicked="OnFunctionClick"
+                MinimumWidthRequest="40"
                 Text="atan"
                 TextColor="Black" />
             <Button
