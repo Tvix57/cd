@@ -1,41 +1,5 @@
 
 
-void Calculator::press_digit() {
-  QPushButton *button = (QPushButton *)sender();
-  static QRegularExpression regex("([+\\-*\\/^(.]|mod|\\d)$");
-  if (!ui->display->text().size() || ui->display->text().contains(regex)) {
-    ui->display->setText(ui->display->text() + button->text());
-  }
-}
-
-void Calculator::press_operation() {
-  QPushButton *button = (QPushButton *)sender();
-  static QRegularExpression regex("([*\\/^]|mod)$");
-  static QRegularExpression regex1("([\\)x]|\\d)$");
-  static QRegularExpression regex2("(([+\\-*\\/^\\(\\)]|mod)[+\\-])$");
-  if (button->text().contains(regex)) {
-    if (ui->display->text().contains(regex1)) {
-      ui->display->setText(ui->display->text() + button->text());
-    }
-  } else {
-    if (!ui->display->text().contains(regex2) &&
-        ui->display->text().size() != 1) {
-      ui->display->setText(ui->display->text() + button->text());
-    } else if (ui->display->text().contains(regex1)) {
-      ui->display->setText(ui->display->text() + button->text());
-    }
-  }
-}
-
-void Calculator::press_function() {
-  QPushButton *button = (QPushButton *)sender();
-  static QRegularExpression regex("([+\\-*\\/^(]|mod)$");
-  if (!ui->display->text().size() || ui->display->text().contains(regex)) {
-    ui->display->setText(ui->display->text() + button->text() + "(");
-    this->parenthesis++;
-  }
-}
-
 void Calculator::pres_parenthes() {
   QPushButton *button = (QPushButton *)sender();
   if (button->objectName() == "oparenthes") {
@@ -50,15 +14,6 @@ void Calculator::pres_parenthes() {
       ui->display->setText(ui->display->text() + button->text());
       this->parenthesis--;
     }
-  }
-}
-
-void Calculator::on_dot_clicked() {
-  static QRegularExpression regex1("\\d+[.]\\d+$");
-  static QRegularExpression regex2("\\d+$");
-  if (!ui->display->text().contains(regex1) &&
-      ui->display->text().contains(regex2)) {
-    ui->display->setText(ui->display->text() + ".");
   }
 }
 
@@ -105,18 +60,5 @@ void Calculator::on_equal_clicked() {
       ui->display->setText(QString::number(calculation(rpn, 0.0), 'g', 15));
     }
     d_free(rpn);
-  }
-}
-
-void Calculator::on_clear_clicked() {
-  ui->display->clear();
-  this->read_x = false;
-}
-
-void Calculator::on_variable_clicked() {
-  static QRegularExpression regex("([+\\-*\\/^(]|mod)$");
-  if (!ui->display->text().size() || ui->display->text().contains(regex)) {
-    ui->display->setText(ui->display->text() + "x");
-    this->read_x = true;
   }
 }

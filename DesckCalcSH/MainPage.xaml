@@ -46,7 +46,7 @@
             Grid.Column="2"
             Padding="0"
             BackgroundColor="LightGrey"
-            Clicked="OnNumberClick"
+            Clicked="OnXClick"
             FontSize="Large"
             MaximumHeightRequest="100"
             MaximumWidthRequest="100"
@@ -240,7 +240,7 @@
             Grid.Column="3"
             Padding="0"
             BackgroundColor="WhiteSmoke"
-            Clicked="OnNumberClick"
+            Clicked="OnDotClick"
             FontSize="Large"
             MaximumHeightRequest="100"
             MaximumWidthRequest="100"
@@ -255,7 +255,7 @@
             Grid.Column="1"
             Padding="0"
             BackgroundColor="LightGrey"
-            Clicked="OnNumberClick"
+            Clicked="OnOperatorClick"
             FontSize="Large"
             MaximumHeightRequest="100"
             MaximumWidthRequest="100"
@@ -269,7 +269,7 @@
             Grid.Column="1"
             Padding="0"
             BackgroundColor="LightGrey"
-            Clicked="OnNumberClick"
+            Clicked="OnOperatorClick"
             FontSize="Large"
             MaximumHeightRequest="100"
             MaximumWidthRequest="100"
@@ -283,7 +283,7 @@
             Grid.Column="1"
             Padding="0"
             BackgroundColor="LightGrey"
-            Clicked="OnNumberClick"
+            Clicked="OnOperatorClick"
             FontSize="Large"
             MaximumHeightRequest="100"
             MaximumWidthRequest="100"
@@ -297,7 +297,7 @@
             Grid.Column="1"
             Padding="0"
             BackgroundColor="LightGrey"
-            Clicked="OnNumberClick"
+            Clicked="OnOperatorClick"
             FontSize="Large"
             MaximumHeightRequest="100"
             MaximumWidthRequest="100"
@@ -346,6 +346,7 @@
                 Grid.Row="0"
                 Grid.Column="0"
                 Padding="0"
+                Clicked="OnFunctionClick"
                 MinimumWidthRequest="40"
                 Text="sin"
                 TextColor="Black" />
@@ -353,6 +354,7 @@
                 Grid.Row="0"
                 Grid.Column="1"
                 Padding="0"
+                Clicked="OnFunctionClick"
                 MinimumWidthRequest="40"
                 Text="asin"
                 TextColor="Black" />
@@ -360,6 +362,7 @@
                 Grid.Row="1"
                 Grid.Column="0"
                 Padding="0"
+                Clicked="OnFunctionClick"
                 MinimumWidthRequest="40"
                 Text="cos"
                 TextColor="Black" />
@@ -367,6 +370,7 @@
                 Grid.Row="1"
                 Grid.Column="1"
                 Padding="0"
+                Clicked="OnFunctionClick"
                 MinimumWidthRequest="40"
                 Text="acos"
                 TextColor="Black" />
@@ -374,6 +378,7 @@
                 Grid.Row="2"
                 Grid.Column="0"
                 Padding="0"
+                Clicked="OnFunctionClick"
                 Text="tan"
                 TextColor="Black" />
             <Button
@@ -381,12 +386,14 @@
                 Grid.Column="1"
                 Padding="0"
                 MinimumWidthRequest="40"
+                Clicked="OnFunctionClick"
                 Text="atan"
                 TextColor="Black" />
             <Button
                 Grid.Row="3"
                 Grid.Column="0"
                 Padding="0"
+                Clicked="OnFunctionClick"
                 MinimumWidthRequest="40"
                 Text="log"
                 TextColor="Black" />
@@ -394,6 +401,7 @@
                 Grid.Row="3"
                 Grid.Column="1"
                 Padding="0"
+                Clicked="OnFunctionClick"
                 MinimumWidthRequest="40"
                 Text="ln"
                 TextColor="Black" />

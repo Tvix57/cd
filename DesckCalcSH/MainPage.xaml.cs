@@ -3,8 +3,11 @@ namespace DesckCalcSH;
 
 public partial class MainPage : ContentPage
 {
-	
-	public MainPage() {
+    private bool read_x = false;
+    private int parenthesis = 0;
+    double step;
+
+    public MainPage() {
 		InitializeComponent();
         this.ClassId = "MainPage";
 	}
@@ -14,11 +17,58 @@ public partial class MainPage : ContentPage
             result.Text = RemoveLast();
         } else {
             result.Text = "";
+            read_x = false;
         }
     }
     private void OnNumberClick(object sender, EventArgs e) {
-		Button btn = sender as Button;
-		result.Text += btn.Text;
+        if (result.Text.Length == 0 || result.Text.Contains("([+\\-*\\/^(.]|mod|\\d)$")) // check regular
+        {
+            Button btn = sender as Button;
+            result.Text += btn.Text;
+        }
+    }
+    private void OnOperatorClick(object sender, EventArgs e)
+    {
+        Button btn = sender as Button;
+        if (btn.Text.Contains("([*\\/^]|mod)$"))
+        {
+            if (result.Text.Contains("([\\)x]|\\d)$")) {
+                result.Text += btn.Text;
+            }
+        }
+        else {
+            if (result.Text.Contains("(([+\\-*\\/^\\(\\)]|mod)[+\\-])$") && result.Text.Length != 1) {
+                result.Text += btn.Text;
+            }
+            else if (result.Text.Contains("([\\)x]|\\d)$"))
+            {
+                result.Text += btn.Text;
+            }
+        }
+    }
+    private void OnFunctionClick(object sender, EventArgs e)
+    {
+        if (result.Text.Length == 0 || result.Text.Contains("([+\\-*\\/^(]|mod)$")) // check regular
+        {
+            Button btn = sender as Button;
+            result.Text += btn.Text + "(";
+            parenthesis++;
+        }
+    }
+    private void OnDotClick(object sender, EventArgs e)
+    {
+        if (result.Text.Contains("\\d+[.]\\d+$") && result.Text.Contains("\\d+$")) // check regular
+        {
+            result.Text += ".";
+        }
+    }
+    private void OnXClick(object sender, EventArgs e)
+    {
+        if (result.Text.Length == 0 || result.Text.Contains("([+\\-*\\/^(]|mod)$") && result.Text.Contains("\\d+$")) // check regular
+        {
+            result.Text += "x";
+            read_x = true;
+        }
     }
     private void OnEqualClick(object sender, EventArgs e) {
         string calculate_txt = "test";
