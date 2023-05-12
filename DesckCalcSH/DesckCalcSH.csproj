@@ -93,6 +93,7 @@
 
 	<ItemGroup>
 	  <Folder Include="LiveCharts\" />
+	  <Folder Include="Model\src\dll\" />
 	</ItemGroup>
 
 
