@@ -159,3 +159,8 @@ SkiaSharp.dll
 SkiaSharp.Views.Android.dll
 SkiaSharp.Views.Maui.Controls.dll
 SkiaSharp.Views.Maui.Core.dll
+HarfBuzzSharp.dll
+LiveChartsCore.dll
+LiveChartsCore.SkiaSharpView.dll
+LiveChartsCore.SkiaSharpView.Maui.dll
+SkiaSharp.Views.Maui.Controls.Compatibility.dll

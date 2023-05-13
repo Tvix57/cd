@@ -1,9 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.Text.RegularExpressions;
-using System.Runtime.InteropServices;
-//[DllImport("Deque.dll")]
-//[DllImport("RPN.dll")]
-//[DllImport("Calc.dll")]
+
 namespace DesckCalcSH;
 
 public partial class MainPage : ContentPage
@@ -15,7 +12,7 @@ public partial class MainPage : ContentPage
     public MainPage() {
 		InitializeComponent(); 
 	}
-	private void OnClearClick(object sender, EventArgs e) {
+    private void OnClearClick(object sender, EventArgs e) {
         Button btn = sender as Button;
         if (btn.Text == "C") {
             result.Text = RemoveLast();
@@ -76,16 +73,12 @@ public partial class MainPage : ContentPage
     }
     private void OnEqualClick(object sender, EventArgs e) {
         if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[\\)x])$")) {
-        //    string str = result.Text;
-        //    char str[256] = "";
-        //    Deque* rpn = init_deque();
-        //    convert_to_rpn(rpn, str);
-        //    calculation(rpn, 0.0);
-        //    d_free(rpn);
+            //ModelSource.Model model = new ModelSource.Model(result.Text);
+            //string calculate_txt = model.Calculate().ToString();
+            //result.Text = calculate_txt;
+            //string to_history = result.Text + "\n=\n" + calculate_txt;
         }
-        string calculate_txt = "test";
-        result.Text = calculate_txt;
-        string tmp = result.Text + "=" + calculate_txt;
+
 
        // var pat = this.Parent as AppShell;
         
