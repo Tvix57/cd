@@ -1,10 +1,12 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
+
 namespace DesckCalcSH.ModelSource
 {
+
     [StructLayout(LayoutKind.Explicit)]
-    struct token_t
+    unsafe struct token_t
     {
         [FieldOffset(0)]
         int operation;
@@ -34,22 +36,23 @@ namespace DesckCalcSH.ModelSource
     public class Model {
         private unsafe Deque* rpn = null;
 
-        [DllImport("Deque.dll")]
-        private unsafe static extern Deque* init_deque();
+        [DllImport("Deque.dll", EntryPoint = "init_deque")]
+        internal unsafe static extern Deque* init_deque();
         [DllImport("RPN.dll")]
         private unsafe static extern void convert_to_rpn(Deque* deq, char* str);
         [DllImport("Calc.dll")]
         private unsafe static extern double calculation(Deque* deq, double x_value);
+        [DllImport("Deque.dll")]
         private unsafe static extern void d_free(Deque* deq);
+
         public Model(string input)
         {
 
             var arr = input.ToCharArray();
             unsafe
             {
-                fixed (char* charPTR = arr) {
-
-
+                fixed (char* charPTR = arr)
+                {
                     rpn = init_deque();
                     convert_to_rpn(rpn, charPTR);
                 }
@@ -76,7 +79,10 @@ namespace DesckCalcSH.ModelSource
         {
             unsafe
             {
-                d_free(rpn);
+                if (rpn != null)
+                {
+                    d_free(rpn);
+                }
             }
         }
     }

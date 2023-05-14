@@ -68,10 +68,13 @@
     <PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.3" />
     <PackageReference Include="SkiaSharp.Views.Maui.Core" Version="2.88.3" />
   </ItemGroup>
-  
+ 
   <ItemGroup>
 	  <Compile Update="Pages\AboutPage.xaml.cs">
 	    <DependentUpon>AboutPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\ViewModel.xaml.cs">
+	    <DependentUpon>ViewModel.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Pages\ChartPage.xaml.cs">
 	    <DependentUpon>ChartPage.xaml</DependentUpon>
@@ -83,6 +86,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Pages\AboutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\ViewModel.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\ChartPage.xaml">

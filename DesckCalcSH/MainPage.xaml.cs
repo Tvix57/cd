@@ -72,12 +72,12 @@ public partial class MainPage : ContentPage
         }
     }
     private void OnEqualClick(object sender, EventArgs e) {
-        if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[\\)x])$")) {
-            //ModelSource.Model model = new ModelSource.Model(result.Text);
-            //string calculate_txt = model.Calculate().ToString();
-            //result.Text = calculate_txt;
+       // if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[\\)x])$")) {
+            ModelSource.Model model = new ModelSource.Model(result.Text);
+            string calculate_txt = model.Calculate().ToString();
+            result.Text = calculate_txt;
             //string to_history = result.Text + "\n=\n" + calculate_txt;
-        }
+        //}
 
 
        // var pat = this.Parent as AppShell;

@@ -3,8 +3,7 @@
     x:Class="DesckCalcSH.Pages.ChartPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiSample;assembly=MauiSample"
-    xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui">
+    xmlns:local="clr-namespace:DesckCalcSH.Pages;assembly=DesckCalcSH">
 
     <Grid
         Padding="5,0"
@@ -22,7 +21,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Editor
+        <Entry
             x:Name="XminField"
             Grid.Row="0"
             Grid.Column="0"
@@ -31,10 +30,10 @@
             FontAttributes="Bold"
             FontSize="Large"
             HorizontalTextAlignment="End"
-            Keyboard="Numeric"
             Placeholder="X min"
             TextColor="Orange"
             VerticalTextAlignment="Center" />
+
         <Editor
             x:Name="XmaxField"
             Grid.Row="0"
@@ -44,7 +43,6 @@
             FontAttributes="Bold"
             FontSize="Large"
             HorizontalTextAlignment="End"
-            Keyboard="Numeric"
             Placeholder="X max"
             TextColor="Orange"
             VerticalTextAlignment="Center" />
@@ -57,7 +55,6 @@
             FontAttributes="Bold"
             FontSize="Large"
             HorizontalTextAlignment="End"
-            Keyboard="Numeric"
             Placeholder="Calculate step"
             TextColor="Orange"
             VerticalTextAlignment="Center" />
@@ -69,9 +66,7 @@
             FontSize="Large"
             Text="Drow graph"
             TextColor="Black" />
-        <lvc:CartesianChart
-            Grid.Row="1"
-            Grid.ColumnSpan="2"
-            Series="{Binding Series}" />
+        <local:ViewModel Grid.Row="1" Grid.ColumnSpan="2" />
     </Grid>
+
 </ContentPage>

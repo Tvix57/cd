@@ -1,4 +1,7 @@
-﻿namespace DesckCalcSH;
+﻿using Application = Microsoft.Maui.Controls.Application;
+using LiveChartsCore;
+using LiveChartsCore.SkiaSharpView;
+namespace DesckCalcSH;
 
 public partial class App : Application
 {
@@ -6,5 +9,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 		MainPage = new AppShell();
-	}
+
+    }
 }
