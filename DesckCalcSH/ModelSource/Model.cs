@@ -1,43 +1,41 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-
 namespace DesckCalcSH.ModelSource
 {
-
-    [StructLayout(LayoutKind.Explicit)]
-    unsafe struct token_t
-    {
-        [FieldOffset(0)]
-        int operation;
-        [FieldOffset(0)]
-        double number;
-    }
-    enum e_type_t
-    {
-        NUMBER,
-        OPERATION,
-        VARIABLE
-    }
-    [StructLayout(LayoutKind.Sequential)]
-    unsafe struct lexeme_t
-    {
-        e_type_t type;
-        token_t token;
-        lexeme_t* next;
-        lexeme_t* prev;
-    }
-    [StructLayout(LayoutKind.Sequential)]
-    unsafe struct Deque
-    {
-        unsafe lexeme_t* head;
-        unsafe lexeme_t* tail;
-    }
     public class Model {
+        [StructLayout(LayoutKind.Explicit)]
+        struct token_t
+        {
+            [FieldOffset(0)]
+            int operation;
+            [FieldOffset(0)]
+            double number;
+        }
+        enum e_type_t
+        {
+            NUMBER,
+            OPERATION,
+            VARIABLE
+        }
+        [StructLayout(LayoutKind.Sequential)]
+        unsafe struct lexeme_t
+        {
+            e_type_t type;
+            token_t token;
+            lexeme_t* next;
+            lexeme_t* prev;
+        }
+        [StructLayout(LayoutKind.Sequential)]
+        unsafe struct Deque
+        {
+            unsafe lexeme_t* head;
+            unsafe lexeme_t* tail;
+        }
         private unsafe Deque* rpn = null;
 
-        [DllImport("Deque.dll", EntryPoint = "init_deque")]
-        internal unsafe static extern Deque* init_deque();
+        [DllImport("Deque.dll", CallingConvention = CallingConvention.Cdecl)]
+        private unsafe static extern Deque* init_deque();
         [DllImport("RPN.dll")]
         private unsafe static extern void convert_to_rpn(Deque* deq, char* str);
         [DllImport("Calc.dll")]

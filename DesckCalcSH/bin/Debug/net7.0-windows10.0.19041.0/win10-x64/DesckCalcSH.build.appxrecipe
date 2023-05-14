@@ -607,6 +607,15 @@
     <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\harfbuzzsharp\2.8.2.3\lib\net6.0\HarfBuzzSharp.dll">
       <PackagePath>HarfBuzzSharp.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\iced\1.17.0\lib\netstandard2.1\Iced.dll">
+      <PackagePath>Iced.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\il2cppinterop.common\1.4.5\lib\netstandard2.0\Il2CppInterop.Common.dll">
+      <PackagePath>Il2CppInterop.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\il2cppinterop.runtime\1.4.5\lib\net6.0\Il2CppInterop.Runtime.dll">
+      <PackagePath>Il2CppInterop.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dm\.nuget\packages\livecharts\0.9.7\lib\net45\LiveCharts.dll">
       <PackagePath>LiveCharts.dll</PackagePath>
     </AppxPackagedFile>
@@ -939,21 +948,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\chart.scale-100.png">
       <PackagePath>chart.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
-      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\history.scale-100.png">
       <PackagePath>history.scale-100.png</PackagePath>
