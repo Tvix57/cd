@@ -49,6 +49,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="LiveCharts\**" />
+	  <Compile Remove="LiveCharts\**" />
+	  <EmbeddedResource Remove="LiveCharts\**" />
+	  <MauiCss Remove="LiveCharts\**" />
+	  <MauiXaml Remove="LiveCharts\**" />
+	  <None Remove="LiveCharts\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="deque.h" />
 	  <None Remove="Resources\Images\about.png" />
 	  <None Remove="Resources\Images\calc.png" />
@@ -100,10 +109,6 @@
 	  <MauiXaml Update="Pages\HistoryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="LiveCharts\" />
 	</ItemGroup>
 
 

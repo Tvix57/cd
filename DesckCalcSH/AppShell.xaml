@@ -6,33 +6,37 @@
     xmlns:local="clr-namespace:DesckCalcSH.Pages"
     xmlns:main="clr-namespace:DesckCalcSH">
 
-    <FlyoutItem Title="Calculator" Icon="calc.png">
+    <FlyoutItem Title="Calculator" Icon="calc.png"
+                Route = "MainPage">
         <ShellContent
             Title="Calculator"
             ContentTemplate="{DataTemplate main:MainPage}"
             Icon="calc.png"
-            Route="MainPage" />
+            Route="MainPageDetail" />
     </FlyoutItem>
-    <FlyoutItem Title="Chart" Icon="chart.png">
+    <FlyoutItem Title="Chart" Icon="chart.png"
+                Route = "ChartPage">
         <ShellContent
             Title="Chart"
             ContentTemplate="{DataTemplate local:ChartPage}"
             Icon="chart.png"
-            Route="ChartPage" />
+            Route="ChartPageDetail" />
     </FlyoutItem>
-    <FlyoutItem Title="History" Icon="history.png">
+    <FlyoutItem Title="History" Icon="history.png"
+                Route = "HistoryPage">
         <ShellContent
             Title="History page"
             ContentTemplate="{DataTemplate local:HistoryPage}"
             Icon="history.png"
-            Route="HistoryPage" />
+            Route="HistoryPageDetail" />
     </FlyoutItem>
 
-    <FlyoutItem Title="About" Icon="about.png">
+    <FlyoutItem Title="About" Icon="about.png"
+                Route = "AboutPage">
         <ShellContent
             Title="About"
             ContentTemplate="{DataTemplate local:AboutPage}"
             Icon="about.png"
-            Route="AboutPage" />
+            Route="AboutPageDetail" />
     </FlyoutItem>
 </Shell>

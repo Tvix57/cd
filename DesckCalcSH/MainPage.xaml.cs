@@ -8,10 +8,10 @@ public partial class MainPage : ContentPage
     private bool read_x = false;
     private int branches = 0;
     double step;
-
+    
     public MainPage() {
-		InitializeComponent(); 
-	}
+		InitializeComponent();
+    }
     private void OnClearClick(object sender, EventArgs e) {
         Button btn = sender as Button;
         if (btn.Text == "C") {
@@ -72,28 +72,15 @@ public partial class MainPage : ContentPage
         }
     }
     private void OnEqualClick(object sender, EventArgs e) {
-       // if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[\\)x])$")) {
-            ModelSource.Model model = new ModelSource.Model(result.Text);
-            string calculate_txt = model.Calculate().ToString();
+        // if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[\\)x])$")) {
+        string calculate_txt = "test";
+           // ModelSource.Model model = new ModelSource.Model(result.Text);
+           // string calculate_txt = model.Calculate().ToString();
             result.Text = calculate_txt;
-            //string to_history = result.Text + "\n=\n" + calculate_txt;
+        Shell.Current.GoToAsync($"HistoryPageHistoryPageDetail?newResultProperty={calculate_txt}");
+        //string to_history = result.Text + "\n=\n" + calculate_txt;
         //}
 
-
-       // var pat = this.Parent as AppShell;
-        
-      //  var app = (App)Application.Current;
-/*        var navigationStack = Shell.Current.Navigation.NavigationStack;
-        foreach (var page in navigationStack)
-        {
-            if (page is Pages.HistoryPage page2)
-            {
-                
-                break;
-            }
-        }*/
-/*        var history_page = app.MainPage.Navigation.NavigationStack.FirstOrDefault(p => p?.ClassId == "HistoryPage") as Pages.HistoryPage;
-        history_page?.AddResult(tmp);*/
     }
     private void OnBranchesClick(object sender, EventArgs e) {
         Button btn = sender as Button;

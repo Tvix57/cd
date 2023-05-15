@@ -1,8 +1,21 @@
-﻿namespace DesckCalcSH.Pages;
+﻿using Microsoft.Maui.Controls;
+namespace DesckCalcSH.Pages;
 
+[QueryProperty(nameof(NewResult), "newResultProperty")]
 public partial class HistoryPage : ContentPage
 {
-    private List<string> _history;
+    string newResult;
+    public string NewResult
+    {
+        get => newResult;
+        set
+        {
+            newResult = value;
+            AddResult(value);
+        }
+    }
+
+    public List<string> _history;
     public HistoryPage() {
 		InitializeComponent();
         _history = new List<string>();
@@ -16,6 +29,13 @@ public partial class HistoryPage : ContentPage
 	private void ClearAll(object sender, EventArgs e) {
         _history.Clear();
         history_layout.Clear();
+    }
+    private void SaveData() { 
+    
+    }
+    private void LoadData()
+    {
+
     }
 }
 

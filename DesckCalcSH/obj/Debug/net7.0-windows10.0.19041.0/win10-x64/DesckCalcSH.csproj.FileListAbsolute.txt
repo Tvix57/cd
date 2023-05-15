@@ -642,11 +642,6 @@ C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\calc.scale-100.png
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\chart.scale-100.png
-C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
-C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
-C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
-C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
-C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\history.scale-100.png
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menu.scale-100.png
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauiimage.stamp
@@ -693,3 +688,13 @@ C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win1
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Iced.dll
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Il2CppInterop.Common.dll
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Il2CppInterop.Runtime.dll
+C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HarfBuzzSharp.dll
+C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Iced.dll
+C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Il2CppInterop.Common.dll
+C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Il2CppInterop.Runtime.dll
+C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\LiveChartsCore.dll
+C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\LiveChartsCore.SkiaSharpView.dll
+C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\LiveChartsCore.SkiaSharpView.Maui.dll
+C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SkiaSharp.HarfBuzz.dll
+C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Maui.Controls.Compatibility.dll
+C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\libHarfBuzzSharp.dll
