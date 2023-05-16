@@ -700,3 +700,5 @@ C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\libHarfBuzzSharp.dll
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ModelSource\src\dll\Model.dll
 C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ModelSource\src\dll\Model2.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ModelSource\src\dll\Model.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ModelSource\src\dll\Model2.dll
