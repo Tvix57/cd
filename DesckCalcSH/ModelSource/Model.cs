@@ -34,18 +34,18 @@ namespace DesckCalcSH.ModelSource
         }
         private unsafe Deque* rpn = null;
 
-        [DllImport("Deque.dll", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("ModelSource/src/dll/Model2.dll")]
         private unsafe static extern Deque* init_deque();
-        [DllImport("RPN.dll")]
+        [DllImport("ModelSource/src/dll/Model2.dll")]
         private unsafe static extern void convert_to_rpn(Deque* deq, char* str);
-        [DllImport("Calc.dll")]
+        [DllImport("ModelSource/src/dll/Model2.dll")]
         private unsafe static extern double calculation(Deque* deq, double x_value);
-        [DllImport("Deque.dll")]
+        [DllImport("ModelSource/src/dll/Model2.dll")]
         private unsafe static extern void d_free(Deque* deq);
 
         public Model(string input)
         {
-
+           // 
             var arr = input.ToCharArray();
             unsafe
             {

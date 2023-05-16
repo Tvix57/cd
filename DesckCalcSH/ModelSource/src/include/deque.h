@@ -7,6 +7,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 typedef union {
   int operation;
   double number;
@@ -21,12 +24,19 @@ typedef struct lexeme_t {
   struct lexeme_t *prev;
 } lexeme_t;
 
-typedef struct {
+__declspec(dllexport) typedef struct {
   lexeme_t *head;
   lexeme_t *tail;
 } Deque;
 
-Deque *init_deque(void);
+__declspec(dllexport) Deque *init_deque(void);
+__declspec(dllexport) void d_free(Deque *deque);
+
+#ifdef __cplusplus
+}
+#endif
+
+//Deque *init_deque(void);
 lexeme_t *init_lexem(int type, va_list args);
 void d_push_f(Deque *deque, int type, ...);
 void d_push_b(Deque *deque, int type, ...);
@@ -42,6 +52,9 @@ bool d_get_number_f(Deque *deque, double *value);
 bool d_get_number_b(Deque *deque, double *value);
 int d_get_type_f(Deque *deque);
 int d_get_type_b(Deque *deque);
-void d_free(Deque *deque);
+//void d_free(Deque *deque);
+
+
+
 
 #endif  // SRC_INCLUDE_DEQUE_H_
