@@ -14,7 +14,7 @@
                 HorizontalTextAlignment="End"
                 Text=""
                 TextColor="Orange"
-                VerticalTextAlignment="Center" InputTransparent="False"/>
+                VerticalTextAlignment="Center" InputTransparent="False" VerticalOptions="FillAndExpand"/>
         <Grid
             Padding="5,0"
             BackgroundColor="Gray"
@@ -37,11 +37,9 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-
-
             <Button
                 Grid.Row="0"
-                Grid.Column="2"
+                Grid.Column="1"
                 Padding="0"
                 BackgroundColor="LightGrey"
                 Clicked="OnXClick"
@@ -51,7 +49,7 @@
 
             <Button
                 Grid.Row="0"
-                Grid.Column="3"
+                Grid.Column="2"
                 Padding="0"
                 BackgroundColor="LightGrey"
                 Clicked="OnClearClick"
@@ -61,7 +59,8 @@
 
             <Button
                 Grid.Row="0"
-                Grid.Column="4"
+                Grid.Column="3"
+                Grid.ColumnSpan="4"
                 Padding="0"
                 BackgroundColor="LightGrey"
                 Clicked="OnClearClick"
@@ -227,22 +226,10 @@
                 Text="/"
                 TextColor="Black" />
 
-            <Button
-                Grid.Row="0"
-                Grid.Column="1"
-                Padding="0"
-                Clicked="OnShowFunctionClick"
-                FontSize="Large"
-                Text="&lt;&lt;"
-                TextColor="Black" />
-
             <Grid
-                x:Name="dropdown"
                 Grid.Row="0"
                 Grid.RowSpan="5"
-                Grid.Column="0"
-                IsVisible="False"
-                WidthRequest="150">
+                Grid.Column="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*" />
                     <RowDefinition Height="*" />

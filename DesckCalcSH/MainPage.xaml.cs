@@ -71,13 +71,24 @@ public partial class MainPage : ContentPage
             read_x = true;
         }
     }
-    private void OnEqualClick(object sender, EventArgs e) {
+    async void OnEqualClick(object sender, EventArgs e) {
         // if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[\\)x])$")) {
-       // string calculate_txt = "test";
-            ModelSource.Model model = new ModelSource.Model(result.Text);
-            string calculate_txt = model.Calculate().ToString();
-            result.Text = calculate_txt;
-        Shell.Current.GoToAsync($"HistoryPageHistoryPageDetail?newResultProperty={calculate_txt}");
+
+        ModelSource.ModelTest model = new ModelSource.ModelTest();
+        string calculate_txt = model.Calculate(2, 5).ToString();
+
+        var app = App.Current as App;
+        if (app != null)
+        {
+            app.HistoryPage.AddResult(calculate_txt);
+        }
+        //   ModelSource.Model model = new ModelSource.Model(result.Text);
+        // string calculate_txt = model.Calculate().ToString();
+        //var data = new { Value = calculate_txt };
+        //_dataService.SetData(data);
+        result.Text = calculate_txt;
+        // await Shell.Current.GoToAsync($"//HistoryPage/HistoryPageContent?newResultProperty={calculate_txt}");
+        
         //string to_history = result.Text + "\n=\n" + calculate_txt;
         //}
 
@@ -97,12 +108,8 @@ public partial class MainPage : ContentPage
             }
         }
     }
-    private void OnShowFunctionClick(object sender, EventArgs e) {
-        dropdown.IsVisible = !dropdown.IsVisible;
-    }
     private string RemoveLast() {
         string text = result.Text;
         return text;
     }
 }
-

@@ -37,8 +37,8 @@
     <AppxPackagedFile Include="C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\ModelSource\src\dll\Model.dll">
       <PackagePath>ModelSource\src\dll\Model.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\ModelSource\src\dll\Model2.dll">
-      <PackagePath>ModelSource\src\dll\Model2.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\ModelSource\src\dll\ModelTest.dll">
+      <PackagePath>ModelSource\src\dll\ModelTest.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>DesckCalcSH.exe</PackagePath>
