@@ -74,8 +74,8 @@ public partial class MainPage : ContentPage
     async void OnEqualClick(object sender, EventArgs e) {
         // if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[\\)x])$")) {
 
-        ModelSource.ModelTest model = new ModelSource.ModelTest();
-        string calculate_txt = model.Calculate(2, 5).ToString();
+        ModelSource.Model model = new ModelSource.Model(result.Text);
+        string calculate_txt = model.Calculate().ToString();
 
         var app = App.Current as App;
         if (app != null)

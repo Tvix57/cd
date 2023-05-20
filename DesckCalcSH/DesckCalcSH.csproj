@@ -124,7 +124,10 @@
 	  <None Update="ModelSource\src\dll\Model2.dll">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
-	  <None Update="ModelSource\src\dll\ModelTest.dll">
+	  <None Update="ModelSource\src\dll\ModelLib.dll">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="ModelSource\src\dll\ModelLib2.dll">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
 	  <None Update="ModelSource\src\dll\RPN.dll">
