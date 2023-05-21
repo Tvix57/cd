@@ -22,7 +22,7 @@ public partial class MainPage : ContentPage
         }
     }
     private void OnNumberClick(object sender, EventArgs e) {
-        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([+\-*/^(.]|mod|\d)$"))
+        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([+\-*/^(.]|mod|\d)$")) //test reg
         {
             Button btn = sender as Button;
             result.Text += btn.Text;
@@ -31,17 +31,19 @@ public partial class MainPage : ContentPage
     private void OnOperatorClick(object sender, EventArgs e)
     {
         Button btn = sender as Button;
-        if (Regex.IsMatch(btn.Text, @"([*\\/^]|mod)$"))
+        if (Regex.IsMatch(btn.Text, @"([*\\/^]|mod)$")) //test reg
         {
-            if (Regex.IsMatch(result.Text, @"([\\)x]|\d)$")) {
+            if (Regex.IsMatch(result.Text, @"([\\)x]|\d)$"))
+            { //test reg
                 result.Text += btn.Text;
             }
         }
         else {
-            if (!Regex.IsMatch(result.Text, @"(([+\-*\\/^\\(\\)]|mod)[+\-])$") && result.Text.Length != 1) {
+            if (!Regex.IsMatch(result.Text, @"(([+\-*\\/^\\(\\)]|mod)[+\-])$") && result.Text.Length != 1) 
+            { //test reg
                 result.Text += btn.Text;
             }
-            else if (Regex.IsMatch(result.Text, @"([\\)x]|\d)$"))
+            else if (Regex.IsMatch(result.Text, @"([\\)x]|\d)$")) //test reg
             {
                 result.Text += btn.Text;
             }
@@ -49,7 +51,7 @@ public partial class MainPage : ContentPage
     }
     private void OnFunctionClick(object sender, EventArgs e)
     {
-        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([+\-*\\/^(]|mod)$"))
+        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([+\-*\\/^(]|mod)$")) //test reg
         {
             Button btn = sender as Button;
             result.Text += btn.Text + "(";
@@ -71,27 +73,19 @@ public partial class MainPage : ContentPage
             read_x = true;
         }
     }
-    async void OnEqualClick(object sender, EventArgs e) {
-        // if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[\\)x])$")) {
-
-        ModelSource.Model model = new ModelSource.Model(result.Text);
-        string calculate_txt = model.Calculate().ToString();
-
-        var app = App.Current as App;
-        if (app != null)
-        {
-            app.HistoryPage.AddResult(calculate_txt);
+    private void OnEqualClick(object sender, EventArgs e) {
+        if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[\\)x])$")) { //test reg
+            string tmp = result.Text;
+            ModelSource.Model model = new ModelSource.Model(tmp);
+            string calculate_txt = model.Calculate().ToString();
+            var app = App.Current as App;
+            if (app != null)
+            {
+                app.HistoryPage.AddResult(result.Text);
+                app.HistoryPage.AddResult(calculate_txt);            
+            }
+            result.Text = calculate_txt;
         }
-        //   ModelSource.Model model = new ModelSource.Model(result.Text);
-        // string calculate_txt = model.Calculate().ToString();
-        //var data = new { Value = calculate_txt };
-        //_dataService.SetData(data);
-        result.Text = calculate_txt;
-        // await Shell.Current.GoToAsync($"//HistoryPage/HistoryPageContent?newResultProperty={calculate_txt}");
-        
-        //string to_history = result.Text + "\n=\n" + calculate_txt;
-        //}
-
     }
     private void OnBranchesClick(object sender, EventArgs e) {
         Button btn = sender as Button;
