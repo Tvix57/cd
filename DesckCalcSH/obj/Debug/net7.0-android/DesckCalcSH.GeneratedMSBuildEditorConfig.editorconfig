@@ -12,57 +12,57 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = DesckCalcSH
-build_property.ProjectDir = C:\Users\dm\Desktop\std\cd\DesckCalcSH\
+build_property.ProjectDir = C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\
 
-[C:/Users/dm/Desktop/std/cd/DesckCalcSH/App.xaml]
+[C:/Users/AST/Documents/GitHub/cd/DesckCalcSH/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/dm/Desktop/std/cd/DesckCalcSH/AppShell.xaml]
+[C:/Users/AST/Documents/GitHub/cd/DesckCalcSH/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/dm/Desktop/std/cd/DesckCalcSH/MainPage.xaml]
+[C:/Users/AST/Documents/GitHub/cd/DesckCalcSH/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/dm/Desktop/std/cd/DesckCalcSH/Pages/AboutPage.xaml]
+[C:/Users/AST/Documents/GitHub/cd/DesckCalcSH/Pages/AboutPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.Pages.AboutPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\AboutPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\AboutPage.xaml
 
-[C:/Users/dm/Desktop/std/cd/DesckCalcSH/Pages/ChartPage.xaml]
+[C:/Users/AST/Documents/GitHub/cd/DesckCalcSH/Pages/ChartPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.Pages.ChartPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ChartPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ChartPage.xaml
 
-[C:/Users/dm/Desktop/std/cd/DesckCalcSH/Pages/HistoryPage.xaml]
+[C:/Users/AST/Documents/GitHub/cd/DesckCalcSH/Pages/HistoryPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.Pages.HistoryPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\HistoryPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\HistoryPage.xaml
 
-[C:/Users/dm/Desktop/std/cd/DesckCalcSH/Pages/ViewModel.xaml]
+[C:/Users/AST/Documents/GitHub/cd/DesckCalcSH/Pages/ViewModel.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.Pages.ViewModel.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ViewModel.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ViewModel.xaml
 
-[C:/Users/dm/Desktop/std/cd/DesckCalcSH/Resources/Styles/Colors.xaml]
+[C:/Users/AST/Documents/GitHub/cd/DesckCalcSH/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/dm/Desktop/std/cd/DesckCalcSH/Resources/Styles/Styles.xaml]
+[C:/Users/AST/Documents/GitHub/cd/DesckCalcSH/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

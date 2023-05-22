@@ -351,6 +351,7 @@
                     Grid.Row="5"
                     Grid.Column="1"
                     Padding="0"
+                    Clicked="OnOperatorClick"
                     MinimumWidthRequest="40"
                     Text="+/-"
                     TextColor="Black" />

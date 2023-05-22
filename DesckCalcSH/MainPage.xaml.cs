@@ -22,7 +22,7 @@ public partial class MainPage : ContentPage
         }
     }
     private void OnNumberClick(object sender, EventArgs e) {
-        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([+\-*/^(.]|mod|\d)$")) //test reg
+        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"(\+\\\-|[\+\-\*/^\(\.]|mod|\d)$"))
         {
             Button btn = sender as Button;
             result.Text += btn.Text;
@@ -31,19 +31,20 @@ public partial class MainPage : ContentPage
     private void OnOperatorClick(object sender, EventArgs e)
     {
         Button btn = sender as Button;
-        if (Regex.IsMatch(btn.Text, @"([*\\/^]|mod)$")) //test reg
+        if (Regex.IsMatch(btn.Text, @"^([\+\-\*/^]|mod)$"))
         {
-            if (Regex.IsMatch(result.Text, @"([\\)x]|\d)$"))
-            { //test reg
+            if (Regex.IsMatch(result.Text, @"([)x]|\d)$"))
+            {
                 result.Text += btn.Text;
             }
         }
-        else {
-            if (!Regex.IsMatch(result.Text, @"(([+\-*\\/^\\(\\)]|mod)[+\-])$") && result.Text.Length != 1) 
+        else 
+        {
+            if (!Regex.IsMatch(result.Text, @"([\.\)]|\d)$"))  //@"(([\+\-\*/^\(\)]|mod)[+\-])$" для +/-
             { //test reg
                 result.Text += btn.Text;
             }
-            else if (Regex.IsMatch(result.Text, @"([\\)x]|\d)$")) //test reg
+            else if (btn.Text != "+/-" && Regex.IsMatch(result.Text, @"([)x]|\d)$"))
             {
                 result.Text += btn.Text;
             }
@@ -51,7 +52,7 @@ public partial class MainPage : ContentPage
     }
     private void OnFunctionClick(object sender, EventArgs e)
     {
-        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([+\-*\\/^(]|mod)$")) //test reg
+        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([\+\-\*/^(]|mod)$"))
         {
             Button btn = sender as Button;
             result.Text += btn.Text + "(";
@@ -67,14 +68,14 @@ public partial class MainPage : ContentPage
     }
     private void OnXClick(object sender, EventArgs e)
     {
-        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([+\-*\\/^(]|mod)$")) // check regular
+        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([\+\-\*/^(]|mod)$"))
         {
             result.Text += "x";
             read_x = true;
         }
     }
     private void OnEqualClick(object sender, EventArgs e) {
-        if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[\\)x])$")) { //test reg
+        if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[)x])$")) {
             string tmp = result.Text;
             ModelSource.Model model = new ModelSource.Model(tmp);
             string calculate_txt = model.Calculate().ToString();
@@ -85,18 +86,19 @@ public partial class MainPage : ContentPage
                 app.HistoryPage.AddResult(calculate_txt);            
             }
             result.Text = calculate_txt;
-        }
+        } // show message incorect input
     }
     private void OnBranchesClick(object sender, EventArgs e) {
         Button btn = sender as Button;
         if (btn.Text == "(") {
-            if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([+\-*\\/^(]|mod)$"))
+            if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([+\-*\\/^(]|mod)$"))  //test reg
             {
                 result.Text += btn.Text;
                 branches++;
             }
         } else if (branches != 0) {
-            if (Regex.IsMatch(result.Text, @"(\d|[)]|x)$")) {
+            if (Regex.IsMatch(result.Text, @"(\d|[)]|x)$"))
+            { //test reg
                 result.Text += btn.Text;
                 branches--;
             }
