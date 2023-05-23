@@ -10,11 +10,6 @@ public partial class HistoryPage : ContentPage
     public HistoryPage() {
 		InitializeComponent();
         _history = new List<string>();
-        LoadData();
-    }
-    ~HistoryPage()
-    {
-        SaveData();
     }
 	public void AddResult(string res) 
     {
@@ -30,18 +25,17 @@ public partial class HistoryPage : ContentPage
         _history.Clear();
         history_layout.Clear();
     }
-    private void SaveData() 
+    public void SaveData() 
     {
-        var json = JsonConvert.SerializeObject(_history);
-        Preferences.Set("history", json);
+        Preferences.Set("history", string.Join(",", _history));
     }
-    private void LoadData()
+    public void LoadData()
     {
-        var jsonString = Preferences.Get("history", string.Empty);
-/*        var last_history = JsonConvert.DeserializeObject<List<string>>(jsonString);
-        foreach (string item in last_history) {
-            AddResult(item);
-        }*/
+        string savedSerializedList = Preferences.Get("history", ",");
+        List<string> tmp_history = savedSerializedList.Split(',').ToList();
+        foreach (var it in tmp_history) {
+            AddResult(it);
+        }
     }
     private void OnLabelTapped(object sender, EventArgs e)
     {
@@ -49,8 +43,13 @@ public partial class HistoryPage : ContentPage
         var app = App.Current as App;
         if (app != null)
         {
-            // app.CalcPage.AddResult(lab.Text); // отправить данные в калькулятор
+            app.CalcPage.SetHistory(lab.Text);
         }
     }
+/*    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+        SaveData();
+    }*/
 }
 

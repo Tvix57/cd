@@ -48,20 +48,6 @@ void d_push_f(Deque *deque, int type, ...) {
   va_end(args);
 }
 
-// void d_push_lexem_f(Deque *deque, lexeme_t *lexeme) {
-//   if (!deque) {
-//     deque = init_deque();
-//   }
-//   if (!deque->head) {
-//     deque->head = lexeme;
-//     deque->tail = lexeme;
-//   } else {
-//     lexeme->next = deque->head;
-//     deque->head->prev = lexeme;
-//     deque->head = lexeme;
-//   }
-// }
-
 void d_push_b(Deque *deque, int type, ...) {
   va_list args;
   va_start(args, type);
@@ -94,35 +80,9 @@ void d_push_lexem_b(Deque *deque, lexeme_t *lexeme) {
   }
 }
 
-// bool d_peek_f(Deque *deque, unsigned int *type, token_t *t) {
-//   bool flag = false;
-//   memset(type, 0, sizeof(unsigned int));
-//   if (deque && deque->head) {
-//     *type = deque->head->type;
-//     *t = deque->head->token;
-//     flag = true;
-//   }
-//   return flag;
-// }
-
-// bool d_peek_b(Deque *deque, unsigned int *type, token_t *t) {
-//   bool flag = false;
-//   memset(type, 0, sizeof(unsigned int));
-//   if (deque && deque->tail) {
-//     *type = deque->tail->type;
-//     *t = deque->tail->token;
-//     flag = true;
-//   }
-//   return flag;
-// }
-
 int d_get_type_f(Deque *deque) {
   return deque->head ? (int)deque->head->type : -1;
 }
-
-// int d_get_type_b(Deque *deque) {
-//   return deque->tail ? (int)deque->tail->type : -1;
-// }
 
 bool d_get_operation_f(Deque *deque, int *value) {
   bool flag = false;
@@ -133,15 +93,6 @@ bool d_get_operation_f(Deque *deque, int *value) {
   return flag;
 }
 
-// bool d_get_operation_b(Deque *deque, int *value) {
-//   bool flag = false;
-//   if (d_get_type_b(deque) == OPERATION) {
-//     *value = deque->tail->token.operation;
-//     flag = true;
-//   }
-//   return flag;
-// }
-
 bool d_get_number_f(Deque *deque, double *value) {
   bool flag = false;
   if (d_get_type_f(deque) == NUMBER) {
@@ -150,15 +101,6 @@ bool d_get_number_f(Deque *deque, double *value) {
   }
   return flag;
 }
-
-// bool d_get_number_b(Deque *deque, double *value) {
-//   bool flag = false;
-//   if (d_get_type_b(deque) == NUMBER) {
-//     *value = deque->tail->token.number;
-//     flag = true;
-//   }
-//   return flag;
-// }
 
 lexeme_t *d_pop_lexem_f(Deque *deque) {
   lexeme_t *temp = deque->head;
@@ -174,21 +116,6 @@ lexeme_t *d_pop_lexem_f(Deque *deque) {
   }
   return temp;
 }
-
-// lexeme_t *d_pop_lexem_b(Deque *deque) {
-//   lexeme_t *temp = deque->tail;
-//   if (temp) {
-//     deque->tail = temp->prev;
-//     if (deque->tail) {
-//       deque->tail->next = NULL;
-//       temp->prev = NULL;
-//     }
-//   }
-//   if (!deque->tail) {
-//     deque->head = NULL;
-//   }
-//   return temp;
-// }
 
 void d_free(Deque *deque) {
   lexeme_t *temp = NULL;

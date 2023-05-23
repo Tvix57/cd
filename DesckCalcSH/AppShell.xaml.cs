@@ -21,5 +21,6 @@ public partial class AppShell : Shell
         FlyoutItem historyItem = new FlyoutItem() { Title = "History", Icon = "history.png", Route = "HistoryPage" };
         historyItem.Items.Add(new ShellContent() { Title = "History", Content = history, Icon = "chart.png", Route = "HistoryPageContent" });
         Items.Add(historyItem);
+        history.LoadData();
     }
 }
