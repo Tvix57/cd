@@ -46,7 +46,7 @@ public partial class MainPage : ContentPage
         }
         else
         {
-            if (!Regex.IsMatch(result.Text, @"(([\+\-\*\/\^\(\)]|mod)[\+\-]*)$") && result.Text.Length != 1)
+            if (!Regex.IsMatch(result.Text, @"(([\+\\\-\*\/\^\(\)]|mod)[\+\\\-])$") && result.Text.Length != 1)
             {
                 result.Text += btn.Text;
             }
@@ -110,7 +110,7 @@ public partial class MainPage : ContentPage
         else if (branches != 0)
         {
             if (Regex.IsMatch(result.Text, @"(\d|[)]|x)$"))
-            { //test reg
+            {
                 result.Text += btn.Text;
                 branches--;
             }

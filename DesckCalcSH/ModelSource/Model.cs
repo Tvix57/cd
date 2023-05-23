@@ -49,8 +49,8 @@ namespace DesckCalcSH.ModelSource
         {
             List<Regex> regexs = new List<Regex>() 
             { 
-                new Regex( @"([\+\-\*/^\(A])([\+])"),
-                new Regex( @"([\+\-\*/^\(A])([\-])"),
+                new Regex( @"([\+\-\*/\^\(A])([\+])"),
+                new Regex( @"([\+\-\*/\^\(A])([\-])"),
                 new Regex( @"^[\+]"),
                 new Regex( @"^[\-]")///////проверить регулярки
             };
