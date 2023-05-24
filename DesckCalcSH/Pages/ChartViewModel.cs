@@ -20,7 +20,8 @@ public partial class ChartViewModel : ObservableObject
         {
             new ObservableValue(2),
             new(5),
-            new(4) };
+            new(4) 
+        };
         Series = new ObservableCollection<ISeries>
         {
             new LineSeries<ObservableValue>

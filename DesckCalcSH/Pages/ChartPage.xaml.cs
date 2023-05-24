@@ -27,10 +27,12 @@ public partial class ChartPage : ContentPage
             Double.TryParse(XminField.Text, out xMin);
             Double.TryParse(XmaxField.Text, out xMax);
             Double.TryParse(StepField.Text, out step);
-            for (; xMin < xMax; xMin += step)
+            var CVM = ChartView.Content.BindingContext as ChartViewModel;
+            CVM.AddValue(10);
+ /*           for (; xMin < xMax; xMin += step)
             {
                 new_graph.Add(_model.Calculate(xMin));
-            }
+            }*/
         }
     }
 }

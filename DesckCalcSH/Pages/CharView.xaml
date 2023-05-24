@@ -6,7 +6,8 @@
     xmlns:local="clr-namespace:DesckCalcSH.Pages;assembly=DesckCalcSH"
     xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui">
     <ContentView.BindingContext>
-        <local:ChartViewModel />
+        <local:ChartViewModel 
+            x:Name="ChartViewModel"/>
     </ContentView.BindingContext>
     <ContentView.Content>
         <lvc:CartesianChart Series="{Binding Series}" Title="{Binding Title}" />
