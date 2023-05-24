@@ -29,21 +29,21 @@
     <AppXManifest Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-24T07:30:36.830</Modified>
+      <Modified>2023-05-24T11:55:08.335</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-24T06:55:53.906</Modified>
+      <Modified>2023-05-24T11:55:07.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\DesckCalcSH.runtimeconfig.json">
       <PackagePath>DesckCalcSH.runtimeconfig.json</PackagePath>
-      <Modified>2023-05-24T05:59:46.466</Modified>
+      <Modified>2023-05-24T11:55:04.966</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\DesckCalcSH.dll">
       <PackagePath>DesckCalcSH.dll</PackagePath>
-      <Modified>2023-05-24T07:30:34.574</Modified>
+      <Modified>2023-05-24T11:54:52.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\ModelSource\src\dll\ModelLib2.dll">
       <PackagePath>ModelSource\src\dll\ModelLib2.dll</PackagePath>
@@ -51,7 +51,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>DesckCalcSH.exe</PackagePath>
-      <Modified>2023-05-24T07:30:34.588</Modified>
+      <Modified>2023-05-24T11:54:52.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -809,6 +809,10 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2022-11-16T01:34:42.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\communitytoolkit.mvvm\8.2.0\lib\net6.0\CommunityToolkit.Mvvm.dll">
+      <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
+      <Modified>2023-04-27T00:48:24.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\harfbuzzsharp\2.8.2.3\lib\net6.0\HarfBuzzSharp.dll">
       <PackagePath>HarfBuzzSharp.dll</PackagePath>
       <Modified>2022-10-03T22:36:30.000</Modified>
@@ -1027,7 +1031,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\DesckCalcSH.deps.json">
       <PackagePath>DesckCalcSH.deps.json</PackagePath>
-      <Modified>2023-05-24T07:30:36.608</Modified>
+      <Modified>2023-05-24T11:55:07.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

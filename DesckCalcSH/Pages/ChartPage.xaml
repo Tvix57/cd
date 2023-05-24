@@ -72,7 +72,10 @@
             Text="Drow graph"
             TextColor="Black"
             BackgroundColor="Purple"/>
-        <local:ViewModel Grid.Row="2" Grid.ColumnSpan="3" BackgroundColor="Purple"/>
+        <local:ChartView
+            Grid.Row="2" 
+            Grid.ColumnSpan="3"
+           />
     </Grid>
 
 </ContentPage>

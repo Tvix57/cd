@@ -40,17 +40,17 @@ build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.Pages.ChartPag
 build_metadata.AdditionalFiles.TargetPath = Pages\ChartPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ChartPage.xaml
 
+[C:/Users/Admin/Documents/GitHub/cd/DesckCalcSH/Pages/CharView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.Pages.CharView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CharView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CharView.xaml
+
 [C:/Users/Admin/Documents/GitHub/cd/DesckCalcSH/Pages/HistoryPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.Pages.HistoryPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\HistoryPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\HistoryPage.xaml
-
-[C:/Users/Admin/Documents/GitHub/cd/DesckCalcSH/Pages/ViewModel.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = DesckCalcSH.Pages.ViewModel.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\ViewModel.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\ViewModel.xaml
 
 [C:/Users/Admin/Documents/GitHub/cd/DesckCalcSH/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

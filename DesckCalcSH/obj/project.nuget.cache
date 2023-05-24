@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7CqeDCXyTqLTt0oxFfQVCM0vG8UzED/PuFKMbXkiyLqYmkJCUBX1kYpJONq9ZJp8T1LiLNBsmsWhVw4jsfEycA==",
+  "dgSpecHash": "+6hgKV2fQg0U47mav3OatGBp6LrwMhUyClp6NAXnbJkEdNqKdcK4X6KEl35NLVBKcIE6aPFwZvcdGY0SH6ufDA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\cd\\DesckCalcSH\\DesckCalcSH.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\harfbuzzsharp\\2.8.2.3\\harfbuzzsharp.2.8.2.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\harfbuzzsharp.nativeassets.android\\2.8.2.3\\harfbuzzsharp.nativeassets.android.2.8.2.3.nupkg.sha512",
