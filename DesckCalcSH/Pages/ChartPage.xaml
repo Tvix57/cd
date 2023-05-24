@@ -11,6 +11,7 @@
         ColumnSpacing="1"
         RowSpacing="1">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="50" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
@@ -21,52 +22,57 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <Label
+            x:Name="StringLabel"
+            Grid.Row="0"
+            Grid.ColumnSpan="3">
+        </Label>
         <Entry
             x:Name="XminField"
-            Grid.Row="0"
+            Grid.Row="1"
             Grid.Column="0"
             Margin="0"
             Background="White"
             FontAttributes="Bold"
-            FontSize="Large"
+            FontSize="Default"
             HorizontalTextAlignment="End"
             Placeholder="X min"
             TextColor="Orange"
-            VerticalTextAlignment="Center" />
-
+            VerticalTextAlignment="End" />
         <Editor
             x:Name="XmaxField"
-            Grid.Row="0"
+            Grid.Row="1"
             Grid.Column="1"
             Margin="0"
             Background="White"
             FontAttributes="Bold"
-            FontSize="Large"
+            FontSize="Default"
             HorizontalTextAlignment="End"
             Placeholder="X max"
             TextColor="Orange"
-            VerticalTextAlignment="Center" />
+            VerticalTextAlignment="End" />
         <Editor
             x:Name="StepField"
-            Grid.Row="0"
+            Grid.Row="1"
             Grid.Column="2"
             Margin="0"
             Background="White"
             FontAttributes="Bold"
-            FontSize="Large"
+            FontSize="Default"
             HorizontalTextAlignment="End"
             Placeholder="Calculate step"
             TextColor="Orange"
-            VerticalTextAlignment="Center" />
+            VerticalTextAlignment="End" />
         <Button
-            Grid.Row="0"
+            Grid.Row="1"
             Grid.Column="3"
             Padding="0"
             Clicked="DrowGraph"
-            FontSize="Large"
+            FontSize="Default"
             Text="Drow graph"
-            TextColor="Black" />
-        <local:ViewModel Grid.Row="1" Grid.ColumnSpan="2" />
+            TextColor="Black"
+            BackgroundColor="Purple"/>
+        <local:ViewModel Grid.Row="2" Grid.ColumnSpan="3" BackgroundColor="Purple"/>
     </Grid>
 
 </ContentPage>

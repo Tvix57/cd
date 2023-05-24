@@ -9,6 +9,14 @@
         <local:ViewModel />
     </ContentView.BindingContext>
     <ContentView.Content>
-        <lvc:CartesianChart Series="{Binding Series}" />
+        <StackLayout>
+            <Label Text="test"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Large"
+                   TextColor="Black">
+                
+            </Label>
+            <lvc:CartesianChart Series="{Binding Series}" />
+        </StackLayout>
     </ContentView.Content>
 </ContentView>

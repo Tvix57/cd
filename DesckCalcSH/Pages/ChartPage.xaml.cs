@@ -4,6 +4,10 @@ namespace DesckCalcSH.Pages;
 
 public partial class ChartPage : ContentPage
 {
+    public ModelSource.Model Model {
+        set { _model = value;
+            StringLabel.Text = _model.RawString; } }
+    private ModelSource.Model _model = null;
     public ChartPage()
 	{
         InitializeComponent();
@@ -16,7 +20,7 @@ public partial class ChartPage : ContentPage
             XmaxField.Text.Length > 0 &&
             Regex.IsMatch(XmaxField.Text, @"^[+-]?\d+(\.\d+)?$") &&
             StepField.Text.Length > 0 &&
-            Regex.IsMatch(StepField.Text, @"^[+-]?\d+(\.\d+)?$"))
+            Regex.IsMatch(StepField.Text, @"^[+-]?\d+(\.\d+)?$") && _model != null)
         {
             double xMin, xMax, step;
             List<double> new_graph = new List<double>();
@@ -25,7 +29,7 @@ public partial class ChartPage : ContentPage
             Double.TryParse(StepField.Text, out step);
             for (; xMin < xMax; xMin += step)
             {
-                new_graph.Add(xMin);
+                new_graph.Add(_model.Calculate(xMin));
             }
         }
     }

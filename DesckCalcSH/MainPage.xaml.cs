@@ -5,10 +5,7 @@ namespace DesckCalcSH;
 
 public partial class MainPage : ContentPage
 {
-    private bool read_x = false;
     private int branches = 0;
-    double step;
-
     public MainPage()
     {
         InitializeComponent();
@@ -23,7 +20,6 @@ public partial class MainPage : ContentPage
         else
         {
             result.Text = "";
-            read_x = false;
         }
     }
     private void OnNumberClick(object sender, EventArgs e)
@@ -77,7 +73,6 @@ public partial class MainPage : ContentPage
         if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([\+\-\*/^(]|mod)$"))
         {
             result.Text += "x";
-            read_x = true;
         }
     }
     private void OnEqualClick(object sender, EventArgs e)
@@ -86,14 +81,20 @@ public partial class MainPage : ContentPage
         {
             string tmp = result.Text;
             ModelSource.Model model = new ModelSource.Model(tmp);
-            string calculate_txt = model.Calculate().ToString();
             var app = App.Current as App;
-            if (app != null)
-            {
-                app.HistoryPage.AddResult(result.Text);
-                app.HistoryPage.AddResult(calculate_txt);
+            if (result.Text.Contains('x')) {
+                app.ChartPage.Model = model;
             }
-            result.Text = calculate_txt;
+            else
+            {
+                string calculate_txt = model.Calculate().ToString();
+                if (app != null)
+                {
+                    app.HistoryPage.AddResult(result.Text);
+                    app.HistoryPage.AddResult(calculate_txt);
+                }
+                result.Text = calculate_txt;
+            }
         } // show message incorect input
     }
     private void OnBranchesClick(object sender, EventArgs e)
@@ -101,7 +102,7 @@ public partial class MainPage : ContentPage
         Button btn = sender as Button;
         if (btn.Text == "(")
         {
-            if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([+\-*\\/^(]|mod)$"))  //test reg
+            if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([\+\-\*/\^\(]|mod)$"))  //test reg
             {
                 result.Text += btn.Text;
                 branches++;

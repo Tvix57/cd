@@ -35,11 +35,16 @@ public partial class App : Application
     protected override Window CreateWindow(IActivationState activationState)
     {
         var window = base.CreateWindow(activationState);
+        window.Destroying += Window_Destroying;
         window.Width = 600;
-        window.Height = 800;
+        window.Height = 600;
         window.MinimumHeight = 600;
         window.MinimumWidth = 450;
         window.MaximumWidth = 1200;
         return window;
+    }
+    private void Window_Destroying(object sender, EventArgs e)
+    {
+        HistoryPage.SaveData();
     }
 }

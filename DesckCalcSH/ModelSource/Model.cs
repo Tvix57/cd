@@ -6,6 +6,8 @@ using System.Text.RegularExpressions;
 namespace DesckCalcSH.ModelSource
 {
     public class Model {
+        public string RawString { get { return _raw; } }
+        private string _raw;
         [StructLayout(LayoutKind.Explicit)]
         struct token_t
         {
@@ -47,12 +49,13 @@ namespace DesckCalcSH.ModelSource
 
         public Model(string input)
         {
+            _raw = input;
             List<Regex> regexs = new List<Regex>() 
             { 
                 new Regex( @"([\+\-\*/\^\(A])([\+])"),
                 new Regex( @"([\+\-\*/\^\(A])([\-])"),
                 new Regex( @"^[\+]"),
-                new Regex( @"^[\-]")///////проверить регулярки
+                new Regex( @"^[\-]")//////проверить регулярки
             };
             List<string> template = new List<string>()
             {
