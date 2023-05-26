@@ -12,19 +12,19 @@ namespace DesckCalcSH.Pages;
 
 public partial class ChartViewModel : ObservableObject
 {
-    private readonly ObservableCollection<ObservableValue> _observableValues;
+    private readonly ObservableCollection<ObservablePoint> _observableValues;
     public ObservableCollection<ISeries> Series { get; set; }
 
     public ChartViewModel() {
-        _observableValues = new ObservableCollection<ObservableValue>
+        _observableValues = new ObservableCollection<ObservablePoint>
         {
-            new ObservableValue(2),
-            new(5),
-            new(4) 
+            new ObservablePoint(1, 1),
+            new ObservablePoint(2, 2),
+            new ObservablePoint(3, 5),
         };
         Series = new ObservableCollection<ISeries>
         {
-            new LineSeries<ObservableValue>
+            new LineSeries<ObservablePoint>
             {
                 Values = _observableValues,
                 Fill = null
@@ -34,7 +34,7 @@ public partial class ChartViewModel : ObservableObject
     public void ClearAll() {
         _observableValues.Clear();
     }
-    public void AddValue(double value) {
-        _observableValues.Add(new(value));
+    public void AddValue(double x, double y) {
+        _observableValues.Add(new(x, y));
     }
 }

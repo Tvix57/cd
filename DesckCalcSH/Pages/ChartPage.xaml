@@ -73,9 +73,9 @@
             TextColor="Black"
             BackgroundColor="Purple"/>
         <local:ChartView
-            x:Name="ChartView"
+            x:Name="ChartViewLink"
             Grid.Row="2" 
-            Grid.ColumnSpan="3"
+            Grid.ColumnSpan="4"
            />
     </Grid>
 </ContentPage>

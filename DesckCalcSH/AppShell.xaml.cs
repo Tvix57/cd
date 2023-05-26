@@ -19,8 +19,12 @@ public partial class AppShell : Shell
         Items.Add(chartItem);
 
         FlyoutItem historyItem = new FlyoutItem() { Title = "History", Icon = "history.png", Route = "HistoryPage" };
-        historyItem.Items.Add(new ShellContent() { Title = "History", Content = history, Icon = "chart.png", Route = "HistoryPageContent" });
+        historyItem.Items.Add(new ShellContent() { Title = "History", Content = history, Icon = "history.png", Route = "HistoryPageContent" });
         Items.Add(historyItem);
         history.LoadData();
+
+        FlyoutItem aboutItem = new FlyoutItem() { Title = "About", Icon = "about.png", Route = "AboutPage" };
+        aboutItem.Items.Add(new ShellContent() { Title = "About", Content = new AboutPage(), Icon = "about.png", Route = "AboutPageContent" });
+        Items.Add(aboutItem);
     }
 }
