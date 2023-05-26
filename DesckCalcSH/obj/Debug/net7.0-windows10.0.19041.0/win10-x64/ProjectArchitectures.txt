@@ -1,1 +1,1 @@
-C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\DesckCalcSH.csproj;x64
+C:\Users\AST\Documents\GitHub\cd\DesckCalcSH\DesckCalcSH.csproj;x64

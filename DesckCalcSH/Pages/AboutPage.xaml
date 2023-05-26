@@ -5,13 +5,20 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <StackLayout Margin="20">
-        <Label Text="Primary colors" />
+        <Label Text="On this page you will find a description of the main functions and features of this application.
+                     When you start the application, the main window with the calculator application will open." />
         <BoxView Color="Red" />
+        <Label Text="On this page, you can enter a mathematical expression and calculate it." />
         <BoxView Color="Yellow" />
-        <BoxView Color="Blue" />
-        <Label Text="Secondary colors" />
+        <Label Text="The output of the expression will be produced in the main area presented below" />
         <BoxView Color="Green" />
+        <Label Text="Below it are control buttons that will allow you to enter numbers and operators for the calculation.
+                     On the right are additional operators for calculating trigonometric functions and operators" />
         <BoxView Color="Orange" />
+        <Label Text="Bracket buttons for grouping expressions" />
         <BoxView Color="Purple" />
+        <Label Text="Exponentiation and square root buttons" />
+        <Label Text="Buttons for calculating the remainder of a division" />
+        <Label Text="And adding a unary minus." />
     </StackLayout>
 </ContentPage>

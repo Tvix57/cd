@@ -60,10 +60,26 @@
 	<ItemGroup>
 	  <None Remove="deque.h" />
 	  <None Remove="Resources\Images\about.png" />
+	  <None Remove="Resources\Images\branches.png" />
+	  <None Remove="Resources\Images\btns.png" />
 	  <None Remove="Resources\Images\calc.png" />
+	  <None Remove="Resources\Images\CalcScreen.png" />
+	  <None Remove="Resources\Images\CalcScreenOutput.png" />
 	  <None Remove="Resources\Images\chart.png" />
+	  <None Remove="Resources\Images\ChartScreen.png" />
+	  <None Remove="Resources\Images\ChartScreen2.png" />
+	  <None Remove="Resources\Images\fnc.png" />
+	  <None Remove="Resources\Images\fnc2.png" />
+	  <None Remove="Resources\Images\geofnc.png" />
 	  <None Remove="Resources\Images\history.png" />
+	  <None Remove="Resources\Images\HistoryScreen.png" />
+	  <None Remove="Resources\Images\HistoryScreen1.png" />
+	  <None Remove="Resources\Images\HistoryScreen2.png" />
 	  <None Remove="Resources\Images\menu.png" />
+	  <None Remove="Resources\Images\MenuScreen.png" />
+	  <None Remove="Resources\Images\MenuScreenbtn.png" />
+	  <None Remove="Resources\Images\mod.png" />
+	  <None Remove="Resources\Images\umin.png" />
 	</ItemGroup>
   
   <ItemGroup>
