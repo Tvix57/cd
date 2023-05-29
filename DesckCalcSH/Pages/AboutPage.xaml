@@ -4,21 +4,23 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <StackLayout Margin="20">
-        <Label Text="On this page you will find a description of the main functions and features of this application.
-                     When you start the application, the main window with the calculator application will open." />
-        <BoxView Color="Red" />
-        <Label Text="On this page, you can enter a mathematical expression and calculate it." />
-        <BoxView Color="Yellow" />
-        <Label Text="The output of the expression will be produced in the main area presented below" />
-        <BoxView Color="Green" />
-        <Label Text="Below it are control buttons that will allow you to enter numbers and operators for the calculation.
-                     On the right are additional operators for calculating trigonometric functions and operators" />
-        <BoxView Color="Orange" />
-        <Label Text="Bracket buttons for grouping expressions" />
-        <BoxView Color="Purple" />
-        <Label Text="Exponentiation and square root buttons" />
-        <Label Text="Buttons for calculating the remainder of a division" />
-        <Label Text="And adding a unary minus." />
+    <StackLayout>
+        <ScrollView InputTransparent="False" VerticalScrollBarVisibility="Default">
+            <ScrollView.Content>
+                <StackLayout Margin="20">
+                    <Label Text="On this page you will find a description of the main functions and features of this application." />
+                    <Label Text="When you start the application, the main window with the calculator application will open." />
+                    <Image Source="calcscreen.png" Aspect="AspectFit"/>
+                    <Label Text="On this page, you can enter a mathematical expression and calculate it." />
+                    <Image Source="calcscreenout.png" Aspect="AspectFit"/>
+                    <Label Text="The output of the expression will be produced in the main area presented below" />
+                    <Image Source="btns.png" Aspect="AspectFit"/>
+                    <Label Text="Below it are control buttons that will allow you to enter numbers and operators for the calculation." />
+                    <Image Source="fnc2.png" Aspect="AspectFit"/>
+                    <Label Text="On the right are additional operators for calculating trigonometric functions and operators" />
+        
+                </StackLayout>
+            </ScrollView.Content>
+        </ScrollView>
     </StackLayout>
 </ContentPage>

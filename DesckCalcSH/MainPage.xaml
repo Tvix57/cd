@@ -234,7 +234,8 @@
                 Grid.RowSpan="5"
                 Grid.Column="0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
@@ -351,7 +352,7 @@
                     Padding="0"
                     Clicked="OnFunctionClick"
                     MinimumWidthRequest="40"
-                    Text="Sqrt"
+                    Text="sqrt"
                     TextColor="Black"
                     BackgroundColor="Purple"/>
                 <Button
@@ -372,7 +373,24 @@
                     Text="+/-"
                     TextColor="Black"
                     BackgroundColor="Purple"/>
-
+                <Button
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Padding="0"
+                    Clicked="OnFunctionClick"
+                    MinimumWidthRequest="40"
+                    Text="ln"
+                    TextColor="Black"
+                    BackgroundColor="Purple"/>
+                <Button
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    Padding="0"
+                    Clicked="OnFunctionClick"
+                    MinimumWidthRequest="40"
+                    Text="log"
+                    TextColor="Black"
+                    BackgroundColor="Purple"/>
             </Grid>
         </Grid>
     </StackLayout>

@@ -18,8 +18,8 @@
           "Microsoft.Extensions.Logging": "7.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "Microsoft.Extensions.Logging.Debug": "7.0.0",
-          "Microsoft.Maui.Graphics": "7.0.81",
-          "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "7.0.81",
+          "Microsoft.Maui.Graphics": "7.0.86",
+          "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "7.0.86",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.221209.1",
           "Newtonsoft.Json": "13.0.3",
@@ -28,9 +28,9 @@
           "SkiaSharp.Views.Maui.Controls": "2.88.3",
           "SkiaSharp.Views.Maui.Core": "2.88.3",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "7.0.5",
-          "runtimepack.Microsoft.Maui.Core.Runtime.win": "7.0.81",
-          "runtimepack.Microsoft.Maui.Controls.Runtime.win": "7.0.81",
-          "runtimepack.Microsoft.Maui.Essentials.Runtime.win": "7.0.81",
+          "runtimepack.Microsoft.Maui.Core.Runtime.win": "7.0.86",
+          "runtimepack.Microsoft.Maui.Controls.Runtime.win": "7.0.86",
+          "runtimepack.Microsoft.Maui.Essentials.Runtime.win": "7.0.86",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.28"
         },
         "runtime": {
@@ -757,35 +757,35 @@
           }
         }
       },
-      "runtimepack.Microsoft.Maui.Core.Runtime.win/7.0.81": {
+      "runtimepack.Microsoft.Maui.Core.Runtime.win/7.0.86": {
         "runtime": {
           "Microsoft.Maui.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "7.0.70.11"
+            "fileVersion": "7.0.70.16"
           }
         }
       },
-      "runtimepack.Microsoft.Maui.Controls.Runtime.win/7.0.81": {
+      "runtimepack.Microsoft.Maui.Controls.Runtime.win/7.0.86": {
         "runtime": {
           "Microsoft.Maui.Controls.Compatibility.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "7.0.70.11"
+            "fileVersion": "7.0.70.16"
           },
           "Microsoft.Maui.Controls.Xaml.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "7.0.70.11"
+            "fileVersion": "7.0.70.16"
           },
           "Microsoft.Maui.Controls.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "7.0.70.11"
+            "fileVersion": "7.0.70.16"
           }
         }
       },
-      "runtimepack.Microsoft.Maui.Essentials.Runtime.win/7.0.81": {
+      "runtimepack.Microsoft.Maui.Essentials.Runtime.win/7.0.86": {
         "runtime": {
           "Microsoft.Maui.Essentials.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "7.0.70.11"
+            "fileVersion": "7.0.70.16"
           }
         }
       },
@@ -1017,24 +1017,24 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.81": {
+      "Microsoft.Maui.Graphics/7.0.86": {
         "runtime": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "7.0.70.11"
+            "fileVersion": "7.0.70.16"
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.81": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.86": {
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.81",
+          "Microsoft.Maui.Graphics": "7.0.86",
           "Microsoft.WindowsAppSDK": "1.2.221209.1"
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "7.0.70.11"
+            "fileVersion": "7.0.70.16"
           }
         }
       },
@@ -1831,17 +1831,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "runtimepack.Microsoft.Maui.Core.Runtime.win/7.0.81": {
+    "runtimepack.Microsoft.Maui.Core.Runtime.win/7.0.86": {
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
     },
-    "runtimepack.Microsoft.Maui.Controls.Runtime.win/7.0.81": {
+    "runtimepack.Microsoft.Maui.Controls.Runtime.win/7.0.86": {
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
     },
-    "runtimepack.Microsoft.Maui.Essentials.Runtime.win/7.0.81": {
+    "runtimepack.Microsoft.Maui.Essentials.Runtime.win/7.0.86": {
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
@@ -1998,19 +1998,19 @@
       "path": "microsoft.graphics.win2d/1.0.4",
       "hashPath": "microsoft.graphics.win2d.1.0.4.nupkg.sha512"
     },
-    "Microsoft.Maui.Graphics/7.0.81": {
+    "Microsoft.Maui.Graphics/7.0.86": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VMKEIczKYpSN2eGvSv7p40vKhnIXGRXoWLohl2y6azGBMsQbW2GKMjbH4Qv/4zNhBepeGeXTWhtQGAShqSUqZQ==",
-      "path": "microsoft.maui.graphics/7.0.81",
-      "hashPath": "microsoft.maui.graphics.7.0.81.nupkg.sha512"
+      "sha512": "sha512-v0VB9NhVrJarOzl7BHs2LaFQE+syKQ8o1Wbs+I4CGxmQO4cosmoFPUa0ogp1oaJe8Tazu504+P8JDy8fhDsSKQ==",
+      "path": "microsoft.maui.graphics/7.0.86",
+      "hashPath": "microsoft.maui.graphics.7.0.86.nupkg.sha512"
     },
-    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.81": {
+    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.86": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-29ihRZnbKwfo74E14ZU5futuYjyoQk/YeAjA1kfN6eMy/AlXqsBgTCe+iSkW/Tvr144c/Ne367pr0+ATY8Uzjg==",
-      "path": "microsoft.maui.graphics.win2d.winui.desktop/7.0.81",
-      "hashPath": "microsoft.maui.graphics.win2d.winui.desktop.7.0.81.nupkg.sha512"
+      "sha512": "sha512-o9nXvM81cu9PbdDBFcybMyM2hIgb0a8CLu3ZwD0cJrI01ujLoltwkqmlvOrVxgAwL9RvoLIjN51WFjPwvbPrkw==",
+      "path": "microsoft.maui.graphics.win2d.winui.desktop/7.0.86",
+      "hashPath": "microsoft.maui.graphics.win2d.winui.desktop.7.0.86.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
       "type": "package",

@@ -82,7 +82,8 @@ public partial class MainPage : ContentPage
             string tmp = result.Text;
             ModelSource.Model model = new ModelSource.Model(tmp);
             var app = App.Current as App;
-            if (result.Text.Contains('x')) {
+            if (result.Text.Contains('x'))
+            {
                 app.ChartPage.Model = model;
             }
             else
@@ -95,7 +96,7 @@ public partial class MainPage : ContentPage
                 }
                 result.Text = calculate_txt;
             }
-        } // show message incorect input
+        }
     }
     private void OnBranchesClick(object sender, EventArgs e)
     {
@@ -120,6 +121,28 @@ public partial class MainPage : ContentPage
     private string RemoveLast()
     {
         string text = result.Text;
+        if (Regex.IsMatch(text, @"(\d|[\.\+\-\*\/\)X])$"))
+        {
+            text = text.Remove(text.Length - 1, 1);
+        }
+        else if (Regex.IsMatch(text, @"[\(]$")) 
+        {
+            text = text.Remove(text.Length - 1, 1);
+            if (Regex.IsMatch(text, @"(ln)$")) 
+            {
+                text = text.Remove(text.Length - 2, 2);
+            } else if (text.Length != 0 && !Regex.IsMatch(text, @"[\(]$")) 
+            {
+                text = text.Remove(text.Length - 3, 3);
+                if (Regex.IsMatch(text, @"[as]$")) 
+                {
+                    text = text.Remove(text.Length - 1, 1);
+                }
+            }
+        } else if (Regex.IsMatch(text, @"(\w)$")) 
+        {
+            text = text.Remove(text.Length - 3, 3);
+        }
         return text;
     }
     public void SetHistory(string history)
