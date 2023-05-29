@@ -3,24 +3,47 @@
     x:Class="DesckCalcSH.Pages.AboutPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ScrollView InputTransparent="False" VerticalScrollBarVisibility="Always">
+        <ScrollView.Content>
+            <StackLayout Margin="20">
+                <Label Text="On this page you will find a description of the main functions and features of this application." />
+                <Label Text="When you start the application, the main window with the calculator application will open." />
+                <Image Source="calcscreen.png" Aspect="AspectFit"/>
+                <Label Text="On this page, you can enter a mathematical expression and calculate it." />
+                <Image Source="calcscreenout.png" Aspect="AspectFit"/>
+                <Label Text="The output of the expression will be produced in the main area presented below" />
+                <Image Source="btns.png" Aspect="AspectFit"/>
+                <Label Text="Below it are control buttons that will allow you to enter numbers and operators for the calculation." />
+                <Image Source="fnc2.png" Aspect="AspectFit"/>
+                <Label Text="On the right are additional operators for calculating trigonometric functions and operators" />
 
-    <StackLayout>
-        <ScrollView InputTransparent="False" VerticalScrollBarVisibility="Default">
-            <ScrollView.Content>
-                <StackLayout Margin="20">
-                    <Label Text="On this page you will find a description of the main functions and features of this application." />
-                    <Label Text="When you start the application, the main window with the calculator application will open." />
-                    <Image Source="calcscreen.png" Aspect="AspectFit"/>
-                    <Label Text="On this page, you can enter a mathematical expression and calculate it." />
-                    <Image Source="calcscreenout.png" Aspect="AspectFit"/>
-                    <Label Text="The output of the expression will be produced in the main area presented below" />
-                    <Image Source="btns.png" Aspect="AspectFit"/>
-                    <Label Text="Below it are control buttons that will allow you to enter numbers and operators for the calculation." />
-                    <Image Source="fnc2.png" Aspect="AspectFit"/>
-                    <Label Text="On the right are additional operators for calculating trigonometric functions and operators" />
-        
-                </StackLayout>
-            </ScrollView.Content>
-        </ScrollView>
-    </StackLayout>
+                <Label Text="The program also provides additional functionality." />
+                <Image Source="menuscreenbtn.png" Aspect="AspectFit"/>
+                <Label Text="You can access it by pressing the menu button." />
+                <Image Source="menuscreen.png" Aspect="AspectFit"/>
+                <Label Text="In the area that appears, links to:\n
+                           main window with calculator\n
+                           window for plotting a function graph\n
+                           calculation history window\n
+                           help page" />
+                <Image Source="chartscreen.png" Aspect="AspectFit"/>
+                <Label Text="On the graph page, you can visualize the graph of the function entered in the calculator." />
+
+                <Label Text="To do this, you need to write an expression using the X variable." />
+                <Label Text="It will be loaded from the main window onto the chart page and written in this area." />
+                <Image Source="chartscreen2.png" Aspect="AspectFit"/>
+                <Label Text="Specify the range of X values from - 1000000 to 1000000 and the amount of X change." />
+                <Label Text="The calculation may take too long." />
+
+                <Label Text="After clicking on the draw button, the graph will be drawn." />
+                <Image Source="historyscreen.png" Aspect="AspectFit"/>
+                <Label Text="The history page will display all calculations and expressions that were recorded in the main window after pressing the = button." />
+                <Image Source="historyscreen1.png" Aspect="AspectFit"/>
+                <Label Text="All data is saved between program restarts." />
+                <Label Text="You can transfer any line from the history to the main window by clicking on it." />
+                <Image Source="historyscreen2.png" Aspect="AspectFit"/>
+                <Label Text="Click on Clear button to remove all history." />
+            </StackLayout>
+        </ScrollView.Content>
+    </ScrollView>
 </ContentPage>

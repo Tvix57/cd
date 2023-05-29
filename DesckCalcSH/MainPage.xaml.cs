@@ -149,4 +149,18 @@ public partial class MainPage : ContentPage
     {
         result.Text = history;
     }
+
+    private void SwitchSign(object sender, EventArgs e) {
+        string text = result.Text;
+        if (text.Last() == '-')
+        {
+            text = text.Remove(text.Length - 1, 1);
+            text += '+';
+        } else if (text.Last() == '+')
+        {
+            text = text.Remove(text.Length - 1, 1);
+            text += "-";
+        }
+        result.Text = text;
+    }
 }

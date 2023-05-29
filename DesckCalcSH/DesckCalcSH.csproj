@@ -60,7 +60,6 @@
 	<ItemGroup>
 	  <None Remove="deque.h" />
 	  <None Remove="Resources\Images\about.png" />
-	  <None Remove="Resources\Images\branches.png" />
 	  <None Remove="Resources\Images\btns.png" />
 	  <None Remove="Resources\Images\calc.png" />
 	  <None Remove="Resources\Images\calcscreen.png" />
@@ -76,8 +75,6 @@
 	  <None Remove="Resources\Images\menu.png" />
 	  <None Remove="Resources\Images\MenuScreen.png" />
 	  <None Remove="Resources\Images\MenuScreenbtn.png" />
-	  <None Remove="Resources\Images\mod.png" />
-	  <None Remove="Resources\Images\umin.png" />
 	</ItemGroup>
   
   <ItemGroup>
