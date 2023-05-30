@@ -50,17 +50,13 @@ namespace DesckCalcSH.ModelSource
         public Model(string input)
         {
             _raw = input;
-            List<Regex> regexs = new List<Regex>() 
-            { 
-                new Regex( @"([\+\-\*/\^\(A])([\+])"),
-                new Regex( @"([\+\-\*/\^\(A])([\-])"),
-                new Regex( @"^[\+]"),
-                new Regex( @"^[\-]")//////проверить регулярки
+            List<string> regexs = new List<string>() 
+            {
+                @"([\+\-\*/\^\(A])([\+])|^[\+]",
+                @"([\+\-\*/\^\(A])([\-])|^[\-]"
             };
             List<string> template = new List<string>()
             {
-                "\\1B",
-                "\\1C",
                 "B",
                 "C"
             };
@@ -70,9 +66,9 @@ namespace DesckCalcSH.ModelSource
                           Replace("sqrt", "J").Replace("ln", "K").Replace("log", "L").
                           Replace("mod", "A");
 
-            for (int i = 0; i < regexs.Count; ++i)
+            for (int i = 0; i < template.Count; ++i)
             {
-                input = regexs[i].Replace(input, template[i]);
+                input = Regex.Replace(input, regexs[i], "$1" + template[i]);
             }
             IntPtr ptr = Marshal.StringToHGlobalAnsi(input);
             unsafe {
