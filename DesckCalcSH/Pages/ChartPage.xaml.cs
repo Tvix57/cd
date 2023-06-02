@@ -55,13 +55,10 @@ public partial class ChartPage : ContentPage
 
                         var CVM = ChartViewLink.BindingContext as ChartViewModel;
                         CVM.ClearAll();
-                       // Task.Run(() => {
-                            for (; xMin < xMax; xMin += step)
-                            {
-                                CVM.AddValue(xMin, _model.Calculate(xMin));
-                            }
-                       // });
-      
+                        for (; xMin < xMax; xMin += step)
+                        {
+                            CVM.AddValue(xMin, _model.Calculate(xMin));
+                        }
                     }
                 } 
                 else

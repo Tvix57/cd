@@ -949,9 +949,6 @@
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\branches.scale-100.png">
-      <PackagePath>branches.scale-100.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\btns.scale-100.png">
       <PackagePath>btns.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -973,14 +970,8 @@
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\chartscreen2.scale-100.png">
       <PackagePath>chartscreen2.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fnc.scale-100.png">
-      <PackagePath>fnc.scale-100.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fnc2.scale-100.png">
       <PackagePath>fnc2.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\geofnc.scale-100.png">
-      <PackagePath>geofnc.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\history.scale-100.png">
       <PackagePath>history.scale-100.png</PackagePath>
@@ -1002,12 +993,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuscreenbtn.scale-100.png">
       <PackagePath>menuscreenbtn.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\mod.scale-100.png">
-      <PackagePath>mod.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\umin.scale-100.png">
-      <PackagePath>umin.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

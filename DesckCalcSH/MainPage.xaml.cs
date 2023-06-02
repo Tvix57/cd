@@ -85,8 +85,6 @@ public partial class MainPage : ContentPage
             if (result.Text.Contains('x'))
             {
                 app.ChartPage.Model = model;
-                var main = app.MainPage as AppShell;
-               // main.Items[1].Items[0].IsVisible = true;
             }
             else
             {

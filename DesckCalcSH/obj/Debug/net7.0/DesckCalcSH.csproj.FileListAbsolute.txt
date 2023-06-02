@@ -1,0 +1,14 @@
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0\ModelSource\src\dll\ModelLib2.dll
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0\DesckCalcSH.deps.json
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0\DesckCalcSH.dll
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\bin\Debug\net7.0\DesckCalcSH.pdb
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0\DesckCalcSH.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0\DesckCalcSH.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0\DesckCalcSH.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0\DesckCalcSH.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0\DesckCalcSH.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0\XamlC.stamp
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0\DesckCalcSH.dll
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0\refint\DesckCalcSH.dll
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0\DesckCalcSH.pdb
+C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0\ref\DesckCalcSH.dll
