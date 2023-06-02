@@ -356,6 +356,10 @@
               "version": "[7.0.5, 7.0.5]"
             },
             {
+              "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
+              "version": "[7.0.5, 7.0.5]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
               "version": "[7.0.5, 7.0.5]"
             },
@@ -389,6 +393,9 @@
         }
       },
       "runtimes": {
+        "maccatalyst-arm64": {
+          "#import": []
+        },
         "maccatalyst-x64": {
           "#import": []
         },

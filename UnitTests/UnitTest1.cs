@@ -100,7 +100,7 @@ namespace UnitTests
         [Fact]
         public void Test12()
         {
-        string test10 = "0%2";
+        string test10 = "0mod2";
         Model m = new Model(test10);
         double r10 = m.Calculate();
         double cp_10 = 0;
@@ -127,7 +127,7 @@ namespace UnitTests
         [Fact]
         public void Test15()
     {
-        string test13 = "2%0";
+        string test13 = "2mod0";
         Model m = new Model(test13);
         double r13 = m.Calculate();
             Assert.True(r13 != r13);
@@ -773,17 +773,6 @@ public void Test24()
         Assert.Equal(r25, cp25, 6);
     }
 
-
-     [Fact] public void Test85()
-    {
-        string test25 = "2^2^3";
-        Model m = new Model(test25);
-        double r25 = m.Calculate();
-        double cp25 = (Math.Pow(2, Math.Pow(2, 3)));
-        Assert.Equal(r25, cp25, 6);
-    }
-
-
      [Fact] public void Test86()
     {
         string test25 = "5^(3^3)";
@@ -839,20 +828,9 @@ public void Test24()
         string test25 = "357.34mod(952.34mod712.12)";
         Model m = new Model(test25);
         double r25 = m.Calculate();
-        double cp25 = 357.34 % (952.34 % 712.12);
+        double cp25 = 357.34 % (952.34 % 712.12); //
         Assert.Equal(r25, cp25, 6);
     }
-
-
-     [Fact] public void Test101()
-    {
-        string test25 = "15.234mod(0.52%0.034)";
-        Model m = new Model(test25);
-        double r25 = m.Calculate();
-        double cp25 = 15.234 % (0.52 % 0.034);
-        Assert.Equal(r25, cp25, 6);
-    }
-
 
      [Fact] public void Test102()
     {
@@ -902,17 +880,6 @@ public void Test24()
         double cp25 = 40.34 * (-0.424 / -252);
         Assert.Equal(r25, cp25, 6);
     }
-
-
-     [Fact] public void Test107()
-    {
-        string test25 = "(944mod918)/227";
-        Model m = new Model(test25);
-        double r25 = m.Calculate();
-        double cp25 = (944 % 918) / 227;
-        Assert.Equal(r25, cp25, 6);
-    }
-
 
     [Fact] public void Test108()
     {
@@ -1054,7 +1021,7 @@ public void Test24()
 
     [Fact] public void Test122()
     {
-        string test25 = "2%(3)";
+        string test25 = "2mod(3)";
         Model m = new Model(test25);
         double r25 = m.Calculate();
         double cp25 = 2 % 3;

@@ -10,6 +10,6 @@
             x:Name="ChartViewModelLink"/>
     </ContentView.BindingContext>
     <ContentView.Content>
-        <lvc:CartesianChart Series="{Binding Series}" Title="{Binding Title}" />
+        <lvc:CartesianChart Series="{Binding Series}" Title="{Binding Title}" ZoomMode="Both" />
     </ContentView.Content>
 </ContentView>

@@ -27,7 +27,9 @@ public partial class ChartViewModel : ObservableObject
             new LineSeries<ObservablePoint>
             {
                 Values = _observableValues,
-                Fill = null
+                Fill = null,
+                GeometryFill = null,
+                GeometryStroke = null
             }
         };
     }
