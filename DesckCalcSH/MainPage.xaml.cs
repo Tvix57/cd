@@ -19,6 +19,7 @@ public partial class MainPage : ContentPage
         }
         else
         {
+            branches = 0;
             result.Text = "";
         }
     }
@@ -46,7 +47,7 @@ public partial class MainPage : ContentPage
             {
                 result.Text += btn.Text;
             }
-            else if (Regex.IsMatch(result.Text, @"([)x]|\d)$"))
+            else if (Regex.IsMatch(result.Text, @"([)xX]|\d)$"))
             {
                 result.Text += btn.Text;
             }
@@ -77,7 +78,7 @@ public partial class MainPage : ContentPage
     }
     async private void OnEqualClick(object sender, EventArgs e)
     {
-        if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[)x])$"))
+        if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[)xX])$"))
         {
             string tmp = result.Text;
             ModelSource.Model model = new ModelSource.Model(tmp);
@@ -115,7 +116,7 @@ public partial class MainPage : ContentPage
         }
         else if (branches != 0)
         {
-            if (Regex.IsMatch(result.Text, @"(\d|[)]|x)$"))
+            if (Regex.IsMatch(result.Text, @"(\d|[)]|[xX])$"))
             {
                 result.Text += btn.Text;
                 branches--;
@@ -125,17 +126,20 @@ public partial class MainPage : ContentPage
     private string RemoveLast()
     {
         string text = result.Text;
-        if (Regex.IsMatch(text, @"(\d|[\.\+\-\*\/\)X])$"))
+        if (Regex.IsMatch(text, @"(\d|[\.\+\-\*\/\)xX])$"))
         {
+            branches++;
             text = text.Remove(text.Length - 1, 1);
         }
         else if (Regex.IsMatch(text, @"[\(]$")) 
         {
+            branches--;
             text = text.Remove(text.Length - 1, 1);
             if (Regex.IsMatch(text, @"(ln)$")) 
             {
                 text = text.Remove(text.Length - 2, 2);
-            } else if (text.Length != 0 && !Regex.IsMatch(text, @"[\(]$")) 
+            } 
+            else if (text.Length != 0 && !Regex.IsMatch(text, @"[\(]$")) 
             {
                 text = text.Remove(text.Length - 3, 3);
                 if (Regex.IsMatch(text, @"[as]$")) 
