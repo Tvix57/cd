@@ -128,7 +128,10 @@ public partial class MainPage : ContentPage
         string text = result.Text;
         if (Regex.IsMatch(text, @"(\d|[\.\+\-\*\/\)xX])$"))
         {
-            branches++;
+            if (text.Last() == ')') {
+                branches++;
+            }
+            
             text = text.Remove(text.Length - 1, 1);
         }
         else if (Regex.IsMatch(text, @"[\(]$")) 
