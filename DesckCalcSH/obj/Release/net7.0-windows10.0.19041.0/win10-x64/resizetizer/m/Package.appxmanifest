@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap rescap">
-  <Identity Name="0be7f2c5-5290-4475-b5bc-b6ec887ba5ae" Publisher="CN=Admin" Version="1.0.1.0" />
+  <Identity Name="0be7f2c5-5290-4475-b5bc-b6ec887ba5ae" Publisher="CN=Admin" Version="1.0.2.0" />
   <mp:PhoneIdentity PhoneProductId="9F953AEB-328F-47FE-9E90-1D97F6641FEC" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>DesckCalcSH</DisplayName>

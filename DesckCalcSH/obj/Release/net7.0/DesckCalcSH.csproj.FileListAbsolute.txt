@@ -12,3 +12,17 @@ C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Release\net7.0\DesckCalcSH.dl
 C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Release\net7.0\refint\DesckCalcSH.dll
 C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Release\net7.0\DesckCalcSH.pdb
 C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Release\net7.0\ref\DesckCalcSH.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Release\net7.0\ModelSource\src\dll\ModelLib2.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Release\net7.0\DesckCalcSH.deps.json
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Release\net7.0\DesckCalcSH.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Release\net7.0\DesckCalcSH.pdb
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0\DesckCalcSH.csproj.AssemblyReference.cache
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0\DesckCalcSH.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0\DesckCalcSH.AssemblyInfoInputs.cache
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0\DesckCalcSH.AssemblyInfo.cs
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0\DesckCalcSH.csproj.CoreCompileInputs.cache
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0\XamlC.stamp
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0\DesckCalcSH.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0\refint\DesckCalcSH.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0\DesckCalcSH.pdb
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0\ref\DesckCalcSH.dll

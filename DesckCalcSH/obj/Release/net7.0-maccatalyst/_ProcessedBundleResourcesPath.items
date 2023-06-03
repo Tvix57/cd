@@ -1,6 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <BundleResource Include="obj\Release\net7.0-maccatalyst\resizetizer\f\MauiInfo.plist" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\about.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\btns.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\calc.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\calcscreen.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\calcscrenout.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\chart.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\chartscreen.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\chartscreen2.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\fnc2.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\history.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\historyscreen.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\historyscreen1.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\historyscreen2.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\menu.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\menuscreen.png" />
+    <BundleResource Include="C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\menuscreenbtn.png" />
+    <BundleResource Include="obj\Release\net7.0-maccatalyst\resizetizer\f\OpenSans-Regular.ttf" />
+    <BundleResource Include="obj\Release\net7.0-maccatalyst\resizetizer\f\OpenSans-Semibold.ttf" />
   </ItemGroup>
 </Project>

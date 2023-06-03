@@ -75,7 +75,7 @@ public partial class MainPage : ContentPage
             result.Text += "x";
         }
     }
-    private void OnEqualClick(object sender, EventArgs e)
+    async private void OnEqualClick(object sender, EventArgs e)
     {
         if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[)x])$"))
         {
@@ -96,6 +96,10 @@ public partial class MainPage : ContentPage
                 }
                 result.Text = calculate_txt;
             }
+        }
+        else 
+        {
+            await DisplayAlert("Alert", "Input error", "OK");
         }
     }
     private void OnBranchesClick(object sender, EventArgs e)
