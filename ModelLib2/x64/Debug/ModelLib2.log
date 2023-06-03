@@ -1,8 +1,0 @@
-﻿  pch.cpp
-  calc.cpp
-  deque.cpp
-  dllmain.cpp
-  RPN.cpp
-  Создание кода...
-     Создается библиотека C:\Users\dm\Desktop\std\cd\ModelLib2\x64\Debug\ModelLib2.lib и объект C:\Users\dm\Desktop\std\cd\ModelLib2\x64\Debug\ModelLib2.exp
-  ModelLib2.vcxproj -> C:\Users\dm\Desktop\std\cd\ModelLib2\x64\Debug\ModelLib2.dll
