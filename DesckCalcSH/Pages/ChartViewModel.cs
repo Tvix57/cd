@@ -37,6 +37,9 @@ public partial class ChartViewModel : ObservableObject
         _observableValues.Clear();
     }
     public void AddValue(double x, double y) {
+        if (!double.IsNaN(x) && !double.IsNaN(y) && 
+            !double.IsInfinity(x) && !double.IsInfinity(y) &&
+            !double.IsNegativeInfinity(x) && !double.IsNegativeInfinity(y)) { }
         _observableValues.Add(new(x, y));
     }
 }

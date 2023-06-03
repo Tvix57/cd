@@ -82,6 +82,7 @@ public partial class MainPage : ContentPage
             string tmp = result.Text;
             ModelSource.Model model = new ModelSource.Model(tmp);
             var app = App.Current as App;
+            app.HistoryPage.AddResult(result.Text);
             if (result.Text.Contains('x'))
             {
                 app.ChartPage.Model = model;
@@ -91,7 +92,6 @@ public partial class MainPage : ContentPage
                 string calculate_txt = model.Calculate().ToString();
                 if (app != null)
                 {
-                    app.HistoryPage.AddResult(result.Text);
                     app.HistoryPage.AddResult(calculate_txt);
                 }
                 result.Text = calculate_txt;
