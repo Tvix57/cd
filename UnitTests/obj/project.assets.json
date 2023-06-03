@@ -7243,23 +7243,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\dm\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\cd\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\dm\\Desktop\\std\\cd\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\cd\\UnitTests\\UnitTests.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\cd\\UnitTests\\obj\\",
+      "projectPath": "C:\\Users\\dm\\Desktop\\std\\cd\\UnitTests\\UnitTests.csproj",
+      "packagesPath": "C:\\Users\\dm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dm\\Desktop\\std\\cd\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7275,8 +7277,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Documents\\GitHub\\cd\\DesckCalcSH\\DesckCalcSH.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\cd\\DesckCalcSH\\DesckCalcSH.csproj"
+            "C:\\Users\\dm\\Desktop\\std\\cd\\DesckCalcSH\\DesckCalcSH.csproj": {
+              "projectPath": "C:\\Users\\dm\\Desktop\\std\\cd\\DesckCalcSH\\DesckCalcSH.csproj"
             }
           }
         }

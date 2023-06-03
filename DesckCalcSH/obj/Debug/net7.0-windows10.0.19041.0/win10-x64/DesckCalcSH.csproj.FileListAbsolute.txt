@@ -217,7 +217,6 @@ C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win1
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostfxr.dll
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostpolicy.dll
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore.dll
-C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.222.60605.dll
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordbi.dll
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscorrc.dll
 C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\msquic.dll
@@ -1064,3 +1063,16 @@ C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.1904
 C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.523.17405.dll
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\btns.scale-100.png
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\calcscreen.scale-100.png
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\calcscrenout.scale-100.png
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\chartscreen.scale-100.png
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\chartscreen2.scale-100.png
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fnc2.scale-100.png
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\historyscreen.scale-100.png
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\historyscreen1.scale-100.png
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\historyscreen2.scale-100.png
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuscreen.scale-100.png
+C:\Users\dm\Desktop\std\cd\DesckCalcSH\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuscreenbtn.scale-100.png

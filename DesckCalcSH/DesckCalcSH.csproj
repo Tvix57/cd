@@ -29,9 +29,9 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-		<GenerateAppInstallerFile>True</GenerateAppInstallerFile>
+		<GenerateAppInstallerFile>False</GenerateAppInstallerFile>
 		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
-		<PackageCertificateThumbprint>46ACB3A061933061AD5FE27104C8E4984BFC5194</PackageCertificateThumbprint>
+		<PackageCertificateThumbprint>2BA70A94680230D4535CD6003545A57C1A0E618E</PackageCertificateThumbprint>
 		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
 		<AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
 		<AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
@@ -75,16 +75,16 @@
 	  <None Remove="Resources\Images\calcscreen.png" />
 	  <None Remove="Resources\Images\calcscrenout.png" />
 	  <None Remove="Resources\Images\chart.png" />
-	  <None Remove="Resources\Images\ChartScreen.png" />
-	  <None Remove="Resources\Images\ChartScreen2.png" />
+	  <None Remove="Resources\Images\chartscreen.png" />
+	  <None Remove="Resources\Images\chartscreen2.png" />
 	  <None Remove="Resources\Images\fnc2.png" />
 	  <None Remove="Resources\Images\history.png" />
-	  <None Remove="Resources\Images\HistoryScreen.png" />
-	  <None Remove="Resources\Images\HistoryScreen1.png" />
-	  <None Remove="Resources\Images\HistoryScreen2.png" />
+	  <None Remove="Resources\Images\historyscreen.png" />
+	  <None Remove="Resources\Images\historyscreen1.png" />
+	  <None Remove="Resources\Images\historyscreen2.png" />
 	  <None Remove="Resources\Images\menu.png" />
-	  <None Remove="Resources\Images\MenuScreen.png" />
-	  <None Remove="Resources\Images\MenuScreenbtn.png" />
+	  <None Remove="Resources\Images\menuscreen.png" />
+	  <None Remove="Resources\Images\menuscreenbtn.png" />
 	</ItemGroup>
   
   <ItemGroup>
