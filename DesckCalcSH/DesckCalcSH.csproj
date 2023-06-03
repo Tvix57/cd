@@ -31,14 +31,14 @@
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 		<GenerateAppInstallerFile>False</GenerateAppInstallerFile>
 		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
-		<PackageCertificateThumbprint>2BA70A94680230D4535CD6003545A57C1A0E618E</PackageCertificateThumbprint>
+		<PackageCertificateThumbprint>2EEC3933968346A532F897AAE7F8B2E3F9047C99</PackageCertificateThumbprint>
 		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
 		<AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
 		<AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
 		<GenerateTestArtifacts>True</GenerateTestArtifacts>
 		<AppInstallerUri>C:\Users\Admin\Documents\GitHub\cd\Installer</AppInstallerUri>
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
-		<AppxPackageDir>C:\Users\Admin\Documents\GitHub\cd\DesckCalcSH\Package\</AppxPackageDir>
+		<AppxPackageDir>C:\Users\dm\Desktop\std\cd\Installer</AppxPackageDir>
 	</PropertyGroup>
 
 	<ItemGroup>
