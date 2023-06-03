@@ -6,7 +6,9 @@ using System.Text.RegularExpressions;
 namespace DesckCalcSH.ModelSource
 {
     public class Model {
-        public string RawString { get { return _raw; } }
+        public string RawString { get { return _raw; }
+                                  set { _raw = value; }
+        }
         private string _raw;
         [StructLayout(LayoutKind.Explicit)]
         struct token_t
@@ -47,36 +49,8 @@ namespace DesckCalcSH.ModelSource
         [DllImport("ModelSource/src/dll/ModelLib2.dll")]
         private unsafe static extern void d_free(Deque* deq);
 
-        public Model(string input)
-        {
-            _raw = input;
-            List<string> regexs = new List<string>() 
-            {
-                @"([\+\-\*/\^\(A])([\+])|^[\+]",
-                @"([\+\-\*/\^\(A])([\-])|^[\-]"
-            };
-            List<string> template = new List<string>()
-            {
-                "B",
-                "C"
-            };
-
-            input = input.Replace("acos", "G").Replace("cos", "D").Replace("asin", "H").
-                          Replace("sin", "E").Replace("atan", "I").Replace("tan", "F").
-                          Replace("sqrt", "J").Replace("ln", "K").Replace("log", "L").
-                          Replace("mod", "A");
-
-            for (int i = 0; i < template.Count; ++i)
-            {
-                input = Regex.Replace(input, regexs[i], "$1" + template[i]);
-            }
-            IntPtr ptr = Marshal.StringToHGlobalAnsi(input);
-            unsafe {
-                rpn = init_deque();
-                convert_to_rpn(rpn, ptr);
-            }
-        }
         public double Calculate() {
+
             double result = double.NaN;
             unsafe
             {
@@ -93,7 +67,36 @@ namespace DesckCalcSH.ModelSource
             }
             return result;
         }
+        public void PrepareString() 
+        {
+            string new_string = _raw;
+            List<string> regexs = new List<string>()
+            {
+                @"([\+\-\*/\^\(A])([\+])|^[\+]",
+                @"([\+\-\*/\^\(A])([\-])|^[\-]"
+            };
+            List<string> template = new List<string>()
+            {
+                "B",
+                "C"
+            };
 
+            new_string = new_string.Replace("acos", "G").Replace("cos", "D").Replace("asin", "H").
+                          Replace("sin", "E").Replace("atan", "I").Replace("tan", "F").
+                          Replace("sqrt", "J").Replace("ln", "K").Replace("log", "L").
+                          Replace("mod", "A");
+
+            for (int i = 0; i < template.Count; ++i)
+            {
+                new_string = Regex.Replace(new_string, regexs[i], "$1" + template[i]);
+            }
+            IntPtr ptr = Marshal.StringToHGlobalAnsi(new_string);
+            unsafe
+            {
+                rpn = init_deque();
+                convert_to_rpn(rpn, ptr);
+            }
+        }
         ~Model() 
         {
             unsafe

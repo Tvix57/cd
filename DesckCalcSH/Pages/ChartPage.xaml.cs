@@ -4,9 +4,21 @@ namespace DesckCalcSH.Pages;
 
 public partial class ChartPage : ContentPage
 {
-    public ModelSource.Model Model {
-        set { _model = value;
-            StringLabel.Text = _model.RawString; } }
+    public ModelSource.Model Model
+    {
+        set
+        {
+            _model = value;
+            if (_model != null)
+            {
+                StringLabel.Text = _model?.RawString;
+            }
+            else
+            {
+                StringLabel.Text = "";
+            }
+        }
+    }
     private ModelSource.Model _model = null;
     public ChartPage()
 	{

@@ -4,10 +4,12 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Name="History">
-
-    <StackLayout Margin="20">
-        <Button Clicked="ClearAll" Text="Clear all" />
-        <StackLayout x:Name="history_layout" Margin="20" />
-    </StackLayout>
-
+    <ScrollView InputTransparent="False" VerticalScrollBarVisibility="Always">
+        <ScrollView.Content>
+            <StackLayout Margin="20">
+                <Button Clicked="ClearAll" Text="Clear all" />
+                <StackLayout x:Name="history_layout" Margin="20" />
+            </StackLayout>
+        </ScrollView.Content>
+    </ScrollView>
 </ContentPage>
