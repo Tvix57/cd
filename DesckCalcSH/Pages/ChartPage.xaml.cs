@@ -26,21 +26,21 @@ public partial class ChartPage : ContentPage
     }
     async private void DrowGraph(object sender, EventArgs e)
     {
+        double xMin, xMax, step;
         if (XminField.Text != null &&
-            Regex.IsMatch(XminField.Text, @"^[+-]?\d+(\.\d+)?$")) 
+            Regex.IsMatch(XminField.Text, @"^[-]?\d+(([\.]|[\,])\d+)?$") &&
+            Double.TryParse(XminField.Text, out xMin)) 
         {
             if (XmaxField.Text != null &&
-                Regex.IsMatch(XmaxField.Text, @"^[+-]?\d+(\.\d+)?$"))
+                Regex.IsMatch(XmaxField.Text, @"^[-]?\d+(([\.]|[\,])\d+)?$") &&
+                Double.TryParse(XmaxField.Text, out xMax))
             {
                 if (StepField.Text != null &&
-                    Regex.IsMatch(StepField.Text, @"^\d+(\.\d+)?$")) 
+                    Regex.IsMatch(StepField.Text, @"^\d+(([\.]|[\,])\d+)?$") &&
+                    Double.TryParse(StepField.Text, out step)) 
                 {
                     if (_model != null)
                     {
-                        double xMin, xMax, step;
-                        Double.TryParse(XminField.Text, out xMin);
-                        Double.TryParse(XmaxField.Text, out xMax);
-                        Double.TryParse(StepField.Text, out step);
                         if (xMin > xMax)
                         {
                             double tmp = xMax;
