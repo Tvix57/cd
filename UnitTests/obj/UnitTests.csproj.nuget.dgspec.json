@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\APC2_SmartCalc_v3.0_Desktop_C_sharp-2\\src\\UnitTests\\UnitTests.csproj": {}
+    "C:\\Users\\dm\\Desktop\\std\\cd\\UnitTests\\UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\APC2_SmartCalc_v3.0_Desktop_C_sharp-2\\src\\DesckCalcSH\\DesckCalcSH.csproj": {
+    "C:\\Users\\dm\\Desktop\\std\\cd\\DesckCalcSH\\DesckCalcSH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\APC2_SmartCalc_v3.0_Desktop_C_sharp-2\\src\\DesckCalcSH\\DesckCalcSH.csproj",
+        "projectUniqueName": "C:\\Users\\dm\\Desktop\\std\\cd\\DesckCalcSH\\DesckCalcSH.csproj",
         "projectName": "DesckCalcSH",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\APC2_SmartCalc_v3.0_Desktop_C_sharp-2\\src\\DesckCalcSH\\DesckCalcSH.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\APC2_SmartCalc_v3.0_Desktop_C_sharp-2\\src\\DesckCalcSH\\obj\\",
+        "projectPath": "C:\\Users\\dm\\Desktop\\std\\cd\\DesckCalcSH\\DesckCalcSH.csproj",
+        "packagesPath": "C:\\Users\\dm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dm\\Desktop\\std\\cd\\DesckCalcSH\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -397,20 +398,21 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Documents\\GitHub\\APC2_SmartCalc_v3.0_Desktop_C_sharp-2\\src\\UnitTests\\UnitTests.csproj": {
+    "C:\\Users\\dm\\Desktop\\std\\cd\\UnitTests\\UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\APC2_SmartCalc_v3.0_Desktop_C_sharp-2\\src\\UnitTests\\UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\dm\\Desktop\\std\\cd\\UnitTests\\UnitTests.csproj",
         "projectName": "UnitTests",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\APC2_SmartCalc_v3.0_Desktop_C_sharp-2\\src\\UnitTests\\UnitTests.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\APC2_SmartCalc_v3.0_Desktop_C_sharp-2\\src\\UnitTests\\obj\\",
+        "projectPath": "C:\\Users\\dm\\Desktop\\std\\cd\\UnitTests\\UnitTests.csproj",
+        "packagesPath": "C:\\Users\\dm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dm\\Desktop\\std\\cd\\UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -426,8 +428,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Documents\\GitHub\\APC2_SmartCalc_v3.0_Desktop_C_sharp-2\\src\\DesckCalcSH\\DesckCalcSH.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\APC2_SmartCalc_v3.0_Desktop_C_sharp-2\\src\\DesckCalcSH\\DesckCalcSH.csproj"
+              "C:\\Users\\dm\\Desktop\\std\\cd\\DesckCalcSH\\DesckCalcSH.csproj": {
+                "projectPath": "C:\\Users\\dm\\Desktop\\std\\cd\\DesckCalcSH\\DesckCalcSH.csproj"
               }
             }
           }
@@ -443,31 +445,26 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.Extensions.Configuration": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
             "Microsoft.Extensions.DependencyInjection": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
             "Microsoft.Extensions.Logging": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
             "Microsoft.Extensions.Logging.Abstractions": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Graphics": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.86, )",
               "autoReferenced": true
