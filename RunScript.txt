@@ -1,0 +1,10 @@
+#Mac to create an.app:
+dotnet build -t:Run -f net7.0-maccatalyst -c:Release
+#Mac to create .pkg:
+dotnet build -t:Run -f net7.0-maccatalyst -c:Release /p:CreatePackage=true
+
+#Windows
+dotnet build /restore -f net7.0-windows10.0.19041.0  /p:WindowsPackageType=None
+dotnet build -t:Run -f net7.0-windows10.0.19041.0  /p:WindowsPackageType=None
+
+dotnet publish DesckCalcSH.csproj -f net7.0-windows10.0.19041.0 -c Release

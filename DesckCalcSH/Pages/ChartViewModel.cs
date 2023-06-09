@@ -18,16 +18,18 @@ public partial class ChartViewModel : ObservableObject
     public ChartViewModel() {
         _observableValues = new ObservableCollection<ObservablePoint>
         {
-            new ObservablePoint(1, 1),
-            new ObservablePoint(2, 2),
-            new ObservablePoint(3, 5),
+            new ObservablePoint(1d, 1d),
+            new ObservablePoint(2d, 2d),
+            new ObservablePoint(3d, 5d),
         };
         Series = new ObservableCollection<ISeries>
         {
             new LineSeries<ObservablePoint>
             {
                 Values = _observableValues,
-                Fill = null
+                Fill = null,
+                GeometryFill = null,
+                GeometryStroke = null
             }
         };
     }
@@ -35,6 +37,10 @@ public partial class ChartViewModel : ObservableObject
         _observableValues.Clear();
     }
     public void AddValue(double x, double y) {
-        _observableValues.Add(new(x, y));
+        if (!double.IsNaN(x) && !double.IsNaN(y) && 
+            !double.IsInfinity(x) && !double.IsInfinity(y) &&
+            !double.IsNegativeInfinity(x) && !double.IsNegativeInfinity(y)) {
+            _observableValues.Add(new(x, y));
+        }   
     }
 }

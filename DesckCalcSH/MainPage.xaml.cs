@@ -1,168 +1,122 @@
-﻿using System.Collections.ObjectModel;
+﻿using DesckCalcSH.ModelSource;
+using System.Collections.ObjectModel;
 using System.Text.RegularExpressions;
 
 namespace DesckCalcSH;
 
 public partial class MainPage : ContentPage
 {
-    private int branches = 0;
     public MainPage()
     {
         InitializeComponent();
+        BindingContext = new ModelView();
     }
     private void OnClearClick(object sender, EventArgs e)
     {
         Button btn = sender as Button;
+        ModelView MV = this.BindingContext as ModelView;
         if (btn.Text == "C")
         {
-            result.Text = RemoveLast();
+            MV?.RemoveLast();
         }
         else
         {
-            result.Text = "";
+            MV?.AllClear();
         }
     }
     private void OnNumberClick(object sender, EventArgs e)
     {
-        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"(\+\\\-|[\+\-\*/^\(\.]|mod|\d)$"))
-        {
-            Button btn = sender as Button;
-            result.Text += btn.Text;
-        }
+        ModelView MV = this.BindingContext as ModelView;
+        Button btn = sender as Button;
+        MV?.AddNum(btn?.Text);
     }
     private void OnOperatorClick(object sender, EventArgs e)
     {
         Button btn = sender as Button;
-        if (Regex.IsMatch(btn.Text, @"^([\*/^]|mod)$"))
-        {
-            if (Regex.IsMatch(result.Text, @"([)x]|\d)$"))
-            {
-                result.Text += btn.Text;
-            }
-        }
-        else
-        {
-            if (!Regex.IsMatch(result.Text, @"(([\+\\\-\*\/\^\(\)]|mod)[\+\\\-])$") && result.Text.Length != 1)
-            {
-                result.Text += btn.Text;
-            }
-            else if (Regex.IsMatch(result.Text, @"([)x]|\d)$"))
-            {
-                result.Text += btn.Text;
-            }
-        }
+        ModelView MV = this.BindingContext as ModelView;
+        MV?.AddOperator(btn?.Text);
     }
     private void OnFunctionClick(object sender, EventArgs e)
     {
-        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([\+\-\*/^(]|mod)$"))
-        {
-            Button btn = sender as Button;
-            result.Text += btn.Text + "(";
-            branches++;
-        }
+        Button btn = sender as Button;
+        ModelView MV = this.BindingContext as ModelView;
+        MV?.AddFunction(btn?.Text);
     }
     private void OnDotClick(object sender, EventArgs e)
     {
-        if (!Regex.IsMatch(result.Text, @"\d+[.]\d+$") && Regex.IsMatch(result.Text, @"\d+$"))
-        {
-            result.Text += ".";
-        }
+        ModelView MV = this.BindingContext as ModelView;
+        MV.AddDot();
     }
     private void OnXClick(object sender, EventArgs e)
     {
-        if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([\+\-\*/^(]|mod)$"))
-        {
-            result.Text += "x";
-        }
+        ModelView MV = this.BindingContext as ModelView;
+        MV.AddX();
     }
     private void OnEqualClick(object sender, EventArgs e)
     {
-        if (branches == 0 && Regex.IsMatch(result.Text, @"(\d|[)x])$"))
-        {
-            string tmp = result.Text;
-            ModelSource.Model model = new ModelSource.Model(tmp);
+        if (result.Text != "") {
+            ModelView MV = this.BindingContext as ModelView;
+            temp_layout.Add(AddLabel(MV?.Input));
             var app = App.Current as App;
-            if (result.Text.Contains('x'))
+            app?.HistoryPage?.AddResult(MV?.Input);
+            string tmp = MV?.Input;
+            if (tmp.Contains('x'))
             {
-                app.ChartPage.Model = model;
-                var main = app.MainPage as AppShell;
-               // main.Items[1].Items[0].IsVisible = true;
+                app.ChartPage.Model = MV.GetModel();
             }
             else
             {
-                string calculate_txt = model.Calculate().ToString();
-                if (app != null)
-                {
-                    app.HistoryPage.AddResult(result.Text);
-                    app.HistoryPage.AddResult(calculate_txt);
-                }
-                result.Text = calculate_txt;
+                app?.HistoryPage?.AddResult(MV?.Result);
+                temp_layout.Add(AddLabel(MV?.Result));
             }
+            temp_layout.Add(AddSeparator());
+            MV?.AllClear();
         }
     }
     private void OnBranchesClick(object sender, EventArgs e)
     {
         Button btn = sender as Button;
+        ModelView MV = this.BindingContext as ModelView;
         if (btn.Text == "(")
         {
             if (result.Text.Length == 0 || Regex.IsMatch(result.Text, @"([\+\-\*/\^\(]|mod)$"))
             {
-                result.Text += btn.Text;
-                branches++;
+                MV.AddOBranch();
             }
         }
-        else if (branches != 0)
+        else
         {
-            if (Regex.IsMatch(result.Text, @"(\d|[)]|x)$"))
-            {
-                result.Text += btn.Text;
-                branches--;
-            }
+            MV.AddCBranch();
         }
-    }
-    private string RemoveLast()
-    {
-        string text = result.Text;
-        if (Regex.IsMatch(text, @"(\d|[\.\+\-\*\/\)X])$"))
-        {
-            text = text.Remove(text.Length - 1, 1);
-        }
-        else if (Regex.IsMatch(text, @"[\(]$")) 
-        {
-            text = text.Remove(text.Length - 1, 1);
-            if (Regex.IsMatch(text, @"(ln)$")) 
-            {
-                text = text.Remove(text.Length - 2, 2);
-            } else if (text.Length != 0 && !Regex.IsMatch(text, @"[\(]$")) 
-            {
-                text = text.Remove(text.Length - 3, 3);
-                if (Regex.IsMatch(text, @"[as]$")) 
-                {
-                    text = text.Remove(text.Length - 1, 1);
-                }
-            }
-        } else if (Regex.IsMatch(text, @"(\w)$")) 
-        {
-            text = text.Remove(text.Length - 3, 3);
-        }
-        return text;
     }
     public void SetHistory(string history)
     {
-        result.Text = history;
+        ModelView MV = this.BindingContext as ModelView;
+        MV.AllClear();
+        MV.Input = history;
     }
-
     private void SwitchSign(object sender, EventArgs e) {
-        string text = result.Text;
-        if (text.Last() == '-')
-        {
-            text = text.Remove(text.Length - 1, 1);
-            text += '+';
-        } else if (text.Last() == '+')
-        {
-            text = text.Remove(text.Length - 1, 1);
-            text += "-";
-        }
-        result.Text = text;
+        ModelView MV = this.BindingContext as ModelView;
+        MV.SwitchSign();
+    }
+    private Label AddLabel(string text)
+    {
+        Label lab = new Label { Text = text , FontSize = 20, HorizontalTextAlignment = TextAlignment.End};
+        TapGestureRecognizer labelTapRecognizer = new TapGestureRecognizer();
+        labelTapRecognizer.Tapped += OnLabelTapped;
+        lab.GestureRecognizers.Add(labelTapRecognizer);
+        return lab;
+    }
+    private BoxView AddSeparator()
+    {
+        BoxView separator = new BoxView();
+        separator.Color = Color.FromRgb(255, 255, 255);
+        separator.HeightRequest = 1;
+        return separator;
+    }
+    private void OnLabelTapped(object sender, EventArgs e)
+    {
+        Label lab = sender as Label;
+        SetHistory(lab?.Text);
     }
 }
