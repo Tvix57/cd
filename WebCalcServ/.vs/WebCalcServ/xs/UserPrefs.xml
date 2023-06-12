@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{7D639869-E4B3-4138-931D-DCA4FF3AF98C}|http">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebCalcServ/Views/Home/Calculator.cshtml">
+    <Files>
+      <File FileName="WebCalcServ/Views/Home/Calculator.cshtml" Line="16" Column="1" />
+      <File FileName="WebCalcServ/Controllers/HomeController.cs" Line="18" Column="23" />
+      <File FileName="WebCalcServ/wwwroot/css/site.css" Line="36" Column="25" NotebookId="1" />
+      <File FileName="WebCalcServ/Views/Inputs/CalcInput.cshtml" Line="16" Column="67" NotebookId="1" />
+      <File FileName="WebCalcServ/Views/Output/CalcOutput.cshtml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="WebCalcServ/Models/Model.cs" Line="11" Column="1" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebCalcServ" expanded="True">
+            <Node name="WebCalcServ" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Calculator.cshtml" selected="True" />
+                </Node>
+                <Node name="Inputs" expanded="True" />
+                <Node name="Output" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebCalcServ PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
