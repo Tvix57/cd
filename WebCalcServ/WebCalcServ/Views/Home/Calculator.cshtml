@@ -4,12 +4,12 @@
 
 @model  Model
 
-<div class="text-center">
+<div class="main_layout">
     <div>
-        @*@{Html.RenderPartial("CalcOutput");}*@
+        @{Html.RenderPartialAsync("_CalcOutput");}
     </div>
     <div>
-        @{Html.RenderPartial("_CalcInput");}
+        @{Html.RenderPartialAsync("_CalcInput");}
     </div>
 </div>
 

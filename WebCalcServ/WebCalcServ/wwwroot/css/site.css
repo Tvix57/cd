@@ -1,6 +1,7 @@
-﻿html {
-  font-size: 14px;
-}
+﻿html, body {
+    font-size: 14px;
+    height: 100%;
+ }
 
 @media (min-width: 768px) {
   html {
@@ -8,30 +9,87 @@
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}
-
 .all_keyboard {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-radius: 8px;
+    grid-gap: 5px;
+    width: 100%;
+    height: 30%;
+}
+
+.all_output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-gap: 5px;
+    width: 100%;
+    overflow-y: scroll;
+    height: 70%;
 }
 
 .inj_keyboard {
-    background: #A24FEA;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 25%;
 }
 
 .main_keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    
+    width: 75%;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.main_btn,
+.operator_btn,
+.inj_btn {
+    border-radius: 8px;
+    font-family: 'SB Sans Display';
+    font-style: normal;
+    font-size: 100%;
+    line-height: 20px;
+    color: #212121;
+    min-height:48px;
+    min-width:48px;
+}
+
+.main_btn {
     background: #44EB99;
+}
+
+.operator_btn {
+    background: #FFFFFF;
+}
+
+.inj_btn {
+    background: #A24FEA;
+}
+
+.main_layout {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+}
+
+.output_line {
+    border-radius: 8px;
+    text-align: right;
+    border: 1px solid black;
+    width: 100%;
+    height: 48px;
+    grid-auto-rows: minmax(48px, auto);
+}
+
+.history {
+    width: 100%;
+    height: auto;
+    text-align: right;
+    border-radius: 8px;
+    border: 1px solid black;
+    overflow-y: scroll;
 }

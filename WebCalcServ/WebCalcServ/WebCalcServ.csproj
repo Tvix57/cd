@@ -8,12 +8,6 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
-    <None Remove="Views\Inputs\" />
-    <None Remove="Views\Output\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Inputs\" />
-    <Folder Include="Views\Output\" />
     <Folder Include="wwwroot\css\" />
   </ItemGroup>
   <ItemGroup>

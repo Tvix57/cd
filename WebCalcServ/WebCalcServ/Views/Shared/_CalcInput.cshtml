@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+@using System.Data
+@using System.Text
+
+@model Model
+   
+<div class="all_keyboard">
+    <div class="inj_keyboard">
+        <button class="inj_btn" onclick="AddFunc(this.innerText)">sin</button>
+        <button class="inj_btn" onclick="AddFunc(this.innerText)">asin</button>
+        <button class="inj_btn" onclick="AddFunc(this.innerText)">cos</button>
+        <button class="inj_btn" onclick="AddFunc(this.innerText)">acos</button>
+        <button class="inj_btn" onclick="AddFunc(this.innerText)">tan</button>
+        <button class="inj_btn" onclick="AddFunc(this.innerText)">atan</button>
+        <button class="inj_btn" onclick="AddFunc(this.innerText)">log</button>
+        <button class="inj_btn" onclick="AddFunc(this.innerText)">ln</button>
+        <button class="inj_btn" onclick="AddOBranch()">(</button>
+        <button class="inj_btn" onclick="lAddCBranch()">)</button>
+        <button class="inj_btn" onclick="AddOperator(this.innerText)">^</button>
+        <button class="inj_btn" onclick="AddFunc(this.innerText)">sqrt</button>
+        <button class="inj_btn" onclick="AddOperator(this.innerText)">mod</button>
+        <button class="inj_btn" onclick="SwitchSign()">+/-</button>
+    </div>
+    <div class="main_keyboard">
+        <button class="operator_btn" onclick="AddX()">X</button>
+        <input />
+        <button class="operator_btn" onclick="RemoveLast()">C</button>
+        <button class="operator_btn" onclick="ClearAll()">AC</button>
+        <button class="operator_btn" onclick="AddOperator(this.innerText)">/</button>
+        <button class="main_btn" onclick="AddNum(this.innerText)">7</button>
+        <button class="main_btn" onclick="AddNum(this.innerText)">8</button>
+        <button class="main_btn" onclick="AddNum(this.innerText)">9</button>
+        <button class="operator_btn" onclick="AddOperator(this.innerText)">*</button>
+        <button class="main_btn" onclick="AddNum(this.innerText)">4</button>
+        <button class="main_btn" onclick="AddNum(this.innerText)">5</button>
+        <button class="main_btn" onclick="AddNum(this.innerText)">6</button>
+        <button class="operator_btn" onclick="AddOperator(this.innerText)">-</button>
+        <button class="main_btn" onclick="AddNum(this.innerText)">1</button>
+        <button class="main_btn" onclick="AddNum(this.innerText)">2</button>
+        <button class="main_btn" onclick="AddNum(this.innerText)">3</button>
+        <button class="operator_btn" onclick="AddOperator(this.innerText)">+</button>
+        <button class="main_btn" onclick="AddNum(this.innerText)">0</button>
+        <button class="main_btn" onclick="AddDot()">.</button>
+        <button class="main_btn" style="background: orange" onclick="addToDisplay(000000)">=</button>
+    </div>
+</div>
