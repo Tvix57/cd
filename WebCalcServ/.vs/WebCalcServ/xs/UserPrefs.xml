@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{7D639869-E4B3-4138-931D-DCA4FF3AF98C}|http">
   <MonoDevelop.Ide.Workbench ActiveDocument="WebCalcServ/wwwroot/js/site.js">
     <Files>
-      <File FileName="WebCalcServ/Views/Shared/_CalcInput.cshtml" Line="46" Column="89" />
+      <File FileName="WebCalcServ/Views/Shared/_CalcInput.cshtml" Line="19" Column="52" />
       <File FileName="WebCalcServ/Views/Shared/_CalcOutput.cshtml" Line="8" Column="46" />
-      <File FileName="WebCalcServ/wwwroot/js/site.js" Line="114" Column="16" />
-      <File FileName="WebCalcServ/Models/Model.cs" Line="11" Column="1" NotebookId="1" />
+      <File FileName="WebCalcServ/wwwroot/js/site.js" Line="58" Column="33" />
+      <File FileName="WebCalcServ/Models/Model.cs" NotebookId="1" />
       <File FileName="WebCalcServ/Controllers/HomeController.cs" Line="25" Column="1" NotebookId="1" />
     </Files>
     <Pads>
@@ -30,11 +30,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.WebCalcServ PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebCalcServ PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
 </Properties>
