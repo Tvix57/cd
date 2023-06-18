@@ -4,13 +4,24 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>TRACE;DEBUG;NET;NET7_0;NETCOREAPP</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
+    <Folder Include="Models\lib\" />
+    <Folder Include="Views\Graph\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Models\lib\" />
+    <None Remove="Views\Graph\" />
   </ItemGroup>
 </Project>

@@ -121,3 +121,20 @@ function AddCBranch() {
         AddText(")");
     }
 }
+
+function OnEqual() {
+    const regex = /(\d|[)xX])$/;
+    var resLine = document.getElementById("ResultLine").innerHTML;
+    if (branches === 0 && regex.test(resLine)) {
+        const valueX = document.querySelector('input[type="number"]').value;
+        const url = `/Home/Calculate?line=${resLine}&xVal=${valueX}`;
+        window.location.href = url;
+    }
+}
+
+function OnDraw() {
+    const xMin = document.getElementById("xMin").value;
+    const xMax = document.getElementById("xMax").value;
+    const url = `/Graph/Draw?xMin=${xMin}&xMax=${xMax}`;
+        window.location.href = url;
+}

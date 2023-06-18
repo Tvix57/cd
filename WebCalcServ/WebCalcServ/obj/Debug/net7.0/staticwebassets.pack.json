@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/WebCalcServ.bundle.scp.css"
     },
     {
+      "Id": "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

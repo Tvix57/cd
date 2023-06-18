@@ -16,12 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ
 build_property._RazorSourceGeneratorDebug = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Home/Calculator.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DYWxjdWxhdG9yLmNzaHRtbA==
+[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Graph/Graph.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3JhcGgvR3JhcGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Home/Graph.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9HcmFwaC5jc2h0bWw=
+[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Home/Calculator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DYWxjdWxhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Shared/Error.cshtml]

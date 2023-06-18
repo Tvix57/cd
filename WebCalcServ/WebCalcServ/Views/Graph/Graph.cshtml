@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Graph";
+}
+@model CalculateData
+<div class="graph_layout">
+    <div>
+        @{Html.RenderPartialAsync("GraphInput");}
+    </div>
+    <div>
+        @{Html.RenderPartialAsync("GraphOutput");}
+    </div>
+</div>

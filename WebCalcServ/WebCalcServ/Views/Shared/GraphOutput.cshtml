@@ -1,9 +1,48 @@
 ﻿@{
     ViewData["Title"] = "Calculator";
 }
+@model CalculateData
+<div class="main_layout">
+    <div>@Model.RawLine</div>
+    @{if (@Model.coords.Count > 0) 
+    {
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/Chart.js"></script>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <canvas id="lineChart" style="width:100%;max-width:1500px"></canvas>
+
+        <script>
+        const yValues = JSON.parse('@Html.Raw(Json.Serialize(Model.coords.First()))')
+        const xValues = JSON.parse('@Html.Raw(Json.Serialize(Model.coords.Last()))')
+
+        const lineChart = new Chart("lineChart",
+        {
+            type: "line",
+
+            data: {
+                labels: xValues,
+                datasets: [{
+                    pointRadius: 0,
+                    fill: false,
+                    backgroundColor: "rgba(75, 192, 192, 0.4)",
+                    borderColor: "rgba(75, 192, 192)",
+                    pointBackgroundColor: "rgba(0,0,255,1)",
+                    spanGaps: false,
+                    data: yValues
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+
+                    }
+                },
+                plugins: {
+                    legend: false
+                }
+            }
+        });
+        </script>
+      }
+      }
 </div>
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5tEbDq+/eSGphOT88xg+4MoPsG3n9Ef+BLbCGxADBvQ=",
+  "Hash": "giUSZO0/T5J9ZqYUDYVmEvaBJJIcA1UMAmHjHKwF1qA=",
   "Source": "WebCalcServ",
   "BasePath": "_content/WebCalcServ",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/obj/Debug/net7.0/scopedcss/projectbundle/WebCalcServ.bundle.scp.css"
+    },
+    {
+      "Identity": "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/wwwroot/.DS_Store",
+      "SourceId": "WebCalcServ",
+      "SourceType": "Discovered",
+      "ContentRoot": "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/wwwroot/",
+      "BasePath": "_content/WebCalcServ",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
       "Identity": "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/wwwroot/css/site.css",
