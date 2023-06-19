@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Xml.Linq;
 using Microsoft.AspNetCore.Mvc;
 using WebCalcServ.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -41,8 +42,8 @@ public class HomeController : Controller
             {
                 _model.RawString = _model.RawString.Replace("x", XValue);
             }
-        } 
-        
+        }
+
         _model.PrepareString();
         data.Result = _model.Calculate().ToString();
         return View("Calculator", data);
@@ -58,7 +59,5 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-    //max: @Model.GraphSize["yMax"],
-                            //min: @Model.GraphSize["yMin"]
 }
 

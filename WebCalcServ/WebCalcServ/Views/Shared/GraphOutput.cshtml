@@ -4,15 +4,15 @@
 @model CalculateData
 <div class="main_layout">
     <div>@Model.RawLine</div>
-    @{if (@Model.coords.Count > 0) 
+    @{if (@Model.CoordinateY?.Length > 0 && @Model.CoordinateX?.Length > 0) 
     {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/Chart.js"></script>
 
         <canvas id="lineChart" style="width:100%;max-width:1500px"></canvas>
 
         <script>
-        const yValues = JSON.parse('@Html.Raw(Json.Serialize(Model.coords.First()))')
-        const xValues = JSON.parse('@Html.Raw(Json.Serialize(Model.coords.Last()))')
+        const yValues = JSON.parse('@Html.Raw(Json.Serialize(Model.CoordinateY))')
+        const xValues = JSON.parse('@Html.Raw(Json.Serialize(Model.CoordinateX))')
 
         const lineChart = new Chart("lineChart",
         {
@@ -33,7 +33,8 @@
             options: {
                 scales: {
                     y: {
-
+                        max: 10,
+                        min: -10
                     }
                 },
                 plugins: {

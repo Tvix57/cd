@@ -35,7 +35,8 @@ public class GraphController : Controller
             _model.RawString.Contains("x") &&
             double.TryParse(Request.Query["xMin"].ToString(), out xMin) &&
             double.TryParse(Request.Query["xMax"].ToString(), out xMax)) {
-            data.coords = new List<Tuple<double,double>>();
+            var listY = new List<double>();
+            var listX = new List<double>();
             if (xMin > xMax) {
                 double tmp = xMin;
                 xMin = xMax;
@@ -44,8 +45,11 @@ public class GraphController : Controller
             _model.PrepareString();
             double step = Math.Abs(xMax - xMin) / 3000f;
             for (;xMin <= xMax; xMin += step) {
-                data.coords.Add(new Tuple<double, double>(xMin, _model.Calculate(xMin)));
+                listX.Add(xMin);
+                listY.Add(_model.Calculate(xMin));
             }
+            data.CoordinateX = listX.ToArray();
+            data.CoordinateY = listY.ToArray();
         }
         return View("Graph", data);
     }

@@ -5,8 +5,11 @@
 @model CalculateData
 
 <div class="all_output">
-    <button class="inj_btn" onclick="addToDisplay(3)">Clear history</button>
-    <label class="history">@Model.Result </label>
+    <button class="inj_btn" onclick="ClearHistory()">Clear history</button>
+    <div id="scrollArea" class="scrollArea"></div>
     <textarea readonly type class="output_line" id="ResultLine" name="RawString"></textarea>
 </div>
 
+<script>
+    AddLine("test");
+</script>
