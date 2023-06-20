@@ -139,17 +139,11 @@ function OnDraw() {
         window.location.href = url;
 }
 
-function AddLine(line) {
-    var scrollArea = document.getElementById("scrollArea");
-    const child = document.createElement('label');
-    child.textContent = line;
-    child.className = "history"
-    scrollArea.appendChild(child);
-}
-
 function ClearHistory() {
     var scrollArea = document.getElementById("scrollArea");
     while (scrollArea.firstChild) {
         scrollArea.removeChild(scrollArea.firstChild);
     }
+    const url = `/Home/Clear`;
+    window.location.href = url;
 }

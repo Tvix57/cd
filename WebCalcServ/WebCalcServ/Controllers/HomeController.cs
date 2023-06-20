@@ -46,7 +46,16 @@ public class HomeController : Controller
 
         _model.PrepareString();
         data.Result = _model.Calculate().ToString();
+        data.History = _model.History;
         return View("Calculator", data);
+    }
+
+    [HttpGet]
+    [Route("Home/Clear")]
+    public IActionResult Clear()
+    {
+        _model.ClearHistory();
+        return View("Calculator");
     }
 
     public IActionResult Graph()

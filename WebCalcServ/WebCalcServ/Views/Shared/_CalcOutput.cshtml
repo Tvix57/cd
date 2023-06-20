@@ -6,10 +6,13 @@
 
 <div class="all_output">
     <button class="inj_btn" onclick="ClearHistory()">Clear history</button>
-    <div id="scrollArea" class="scrollArea"></div>
-    <textarea readonly type class="output_line" id="ResultLine" name="RawString"></textarea>
+    <div id="scrollArea" class="scrollArea">
+        @{ if (@Model.History?.Count > 0)
+            @foreach (string expression in Model.History)
+            {
+                <label class="history">@expression</label>
+            }
+         }
+    </div>
+    <textarea readonly type="text" class="output_line" id="ResultLine" name="RawString"></textarea>
 </div>
-
-<script>
-    AddLine("test");
-</script>

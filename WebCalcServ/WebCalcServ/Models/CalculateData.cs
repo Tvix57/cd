@@ -7,7 +7,8 @@ namespace WebCalcServ.Models
 		public string Result = "";
 		public double[] CoordinateX = Array.Empty<double>();
 		public double[] CoordinateY = Array.Empty<double>();
-		public CalculateData() {}
+        public List<string> History { get; set; } = new();
+        public CalculateData() {}
     }
 }
 

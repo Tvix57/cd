@@ -1,9 +1,12 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.ComponentModel;
+using System.IO;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 
 namespace WebCalcServ.Models;
 
-public class Model
+public class Model : INotifyPropertyChanged
 {
     public string RawString
     {
@@ -11,6 +14,8 @@ public class Model
         set { _raw = value; }
     }
     private string _raw;
+    readonly static string s_path = Path.Combine(Directory.GetCurrentDirectory(), ".history.log");
+    public List<string> History { get; private set; } = new();
     [StructLayout(LayoutKind.Explicit)]
     struct token_t
     {
@@ -40,7 +45,7 @@ public class Model
         unsafe lexeme_t* tail;
     }
     private unsafe Deque* rpn = null;
-
+    public event PropertyChangedEventHandler? PropertyChanged;
     [DllImport("Models/lib/ModelLib2")]
     private unsafe static extern Deque* init_deque();
     [DllImport("Models/lib/ModelLib2")]
@@ -57,6 +62,8 @@ public class Model
         unsafe
         {
             result = calculation(rpn, 0.0);
+            saveHistory(_raw);
+            saveHistory(result.ToString());
         }
         return result;
     }
@@ -67,6 +74,7 @@ public class Model
         {
             result = calculation(rpn, x_value);
         }
+
         return result;
     }
     public void PrepareString()
@@ -99,6 +107,49 @@ public class Model
             convert_to_rpn(rpn, ptr);
         }
     }
+
+    private void saveHistory(string line)
+    {
+        using (StreamWriter sw = File.AppendText(s_path))
+        {
+            sw.WriteLine(line);
+            sw.Close();
+        }
+        History.Add(line);
+    }
+
+    private void loadHistory()
+    {
+
+        if (File.Exists(s_path))
+        {
+            using (StreamReader sr = new(s_path))
+            {
+                string? line;
+                while ((line = sr.ReadLine()) is not null)
+                {
+                    History.Add(line);
+                }
+                sr.Close();
+            }
+        }
+    }
+
+    public void ClearHistory()
+    {
+        if (File.Exists(s_path))
+        {
+            File.Delete(s_path);
+            History.Clear();
+            OnPropertyChanged();
+        }
+    }
+
+    private void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+
     ~Model()
     {
         unsafe
