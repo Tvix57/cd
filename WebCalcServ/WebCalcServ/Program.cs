@@ -23,4 +23,3 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Calculator}/{id?}");
 
 app.Run();
-

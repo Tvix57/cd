@@ -21,7 +21,9 @@ public class HomeController : Controller
     
     public IActionResult Calculator()
     {
-        return View();
+        CalculateData data = new CalculateData();
+        data.History = _model.History;
+        return View(data);
     }
 
     [HttpGet]
@@ -61,6 +63,11 @@ public class HomeController : Controller
     public IActionResult Graph()
     {
         return View("../Graph/Graph");
+    }
+
+    public IActionResult About()
+    {
+        return View("About");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

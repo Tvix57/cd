@@ -147,3 +147,7 @@ function ClearHistory() {
     const url = `/Home/Clear`;
     window.location.href = url;
 }
+
+function AddFromLabel(text) {
+
+}

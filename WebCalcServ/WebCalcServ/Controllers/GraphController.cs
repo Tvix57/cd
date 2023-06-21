@@ -17,6 +17,12 @@ public class GraphController : Controller
 
     public IActionResult Calculator()
     {
+
+        return View();
+    }
+
+    public IActionResult About()
+    {
         return View();
     }
 
@@ -31,6 +37,7 @@ public class GraphController : Controller
     {
         double xMin, xMax;
         CalculateData data = new CalculateData();
+        data.RawLine = _model.RawString;
         if (!(string.IsNullOrWhiteSpace(_model.RawString)) &&
             _model.RawString.Contains("x") &&
             double.TryParse(Request.Query["xMin"].ToString(), out xMin) &&

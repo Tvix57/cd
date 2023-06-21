@@ -3,51 +3,46 @@
 }
 @model CalculateData
 <div class="main_layout">
-    <div>@Model.RawLine</div>
+    <label class="history">@Model.RawLine</label>
 </div>
 
 @{if (@Model.CoordinateY?.Length > 0 && @Model.CoordinateX?.Length > 0)
     {
-        <label>TEST</label>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/Chart.js"></script>
 
-  <canvas id="lineChart" style="width:100%;max-width:1500px"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/Chart.js"></script>
+        <canvas id="myChart" style="width:100%"></canvas>
 
-  <script>
-    const yValues = JSON.parse('@Html.Raw(Json.Serialize(Model.CoordinateY))')
-    const xValues = JSON.parse('@Html.Raw(Json.Serialize(Model.CoordinateX))')
+        <script>
+            const yValues = JSON.parse('@Html.Raw(Json.Serialize(Model.CoordinateY))')
+            const xValues = JSON.parse('@Html.Raw(Json.Serialize(Model.CoordinateX))')
 
-    const lineChart = new Chart("lineChart",
-    {
-        type: "line",
-
-        data: {
-            labels: xValues,
-            datasets: [{
-                pointRadius: 0,
-                fill: false,
-                backgroundColor: "rgba(75, 192, 192, 0.4)",
-                borderColor: "rgba(75, 192, 192)",
-                pointBackgroundColor: "rgba(0,0,255,1)",
-                spanGaps: false,
-                data: yValues
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    max: 10,
-                    min: -10
+            const myChart = new Chart("myChart", {
+                type: "line",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        pointRadius: 0,
+                        fill: false,
+                        backgroundColor: "rgba(75, 192, 192, 0.4)",
+                        borderColor: "rgba(75, 192, 192)",
+                        pointBackgroundColor: "rgba(0,0,255,1)",
+                        spanGaps: false,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            max:@Model.CoordinateY.Max(),
+                            min:@Model.CoordinateY.Min()
+                        }
+                    },
+                    plugins: {
+                        legend: false
+                    }
                 }
-            },
-            plugins: {
-                legend: false
-            }
-        }
-        });
+            });</script>
     }
-  </script>
-  }
 }
 
 

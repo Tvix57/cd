@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3JhcGgvR3JhcGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Home/Calculator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DYWxjdWxhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -13,7 +13,7 @@ public class Model : INotifyPropertyChanged
         get { return _raw; }
         set { _raw = value; }
     }
-    private string _raw;
+    private string _raw = "";
     readonly static string s_path = Path.Combine(Directory.GetCurrentDirectory(), ".history.log");
     public List<string> History { get; private set; } = new();
     [StructLayout(LayoutKind.Explicit)]
@@ -54,6 +54,10 @@ public class Model : INotifyPropertyChanged
     private unsafe static extern double calculation(Deque* deq, double x_value);
     [DllImport("Models/lib/ModelLib2")]
     private unsafe static extern void d_free(Deque* deq);
+
+    public Model() {
+        loadHistory();
+    }
 
     public double Calculate()
     {

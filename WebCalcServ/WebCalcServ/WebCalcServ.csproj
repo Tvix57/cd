@@ -16,6 +16,7 @@
     <Folder Include="wwwroot\css\" />
     <Folder Include="Models\lib\" />
     <Folder Include="Views\Graph\" />
+    <Folder Include="Content\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\css\" />
@@ -23,5 +24,58 @@
   <ItemGroup>
     <None Remove="Models\lib\" />
     <None Remove="Views\Graph\" />
+    <None Remove="Content\" />
+    <None Remove="Content\img\btns.png" />
+    <None Remove="Content\img\calcscreen.png" />
+    <None Remove="Content\img\calcscrenout.png" />
+    <None Remove="Content\img\chartscreen.png" />
+    <None Remove="Content\img\chartscreen2.png" />
+    <None Remove="Content\img\fnc2.png" />
+    <None Remove="Content\img\historyscreen.png" />
+    <None Remove="Content\img\historyscreen1.png" />
+    <None Remove="Content\img\historyscreen2.png" />
+    <None Remove="Content\img\menuscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Images\btns.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Content\Images\calcscreen.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Content\Images\calcscrenout.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Content\Images\chartscreen.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Content\Images\chartscreen2.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Content\Images\fnc2.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Content\Images\historyscreen.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Content\Images\historyscreen1.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Content\Images\historyscreen2.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Content\Images\menuscreen.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 </Project>
