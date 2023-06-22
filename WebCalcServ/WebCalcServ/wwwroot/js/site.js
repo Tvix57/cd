@@ -124,7 +124,7 @@ function AddCBranch() {
 
 function OnEqual() {
     const regex = /(\d|[)xX])$/;
-    var resLine = document.getElementById("ResultLine").innerHTML;
+    var resLine = encodeURIComponent(document.getElementById("ResultLine").innerHTML);
     if (branches === 0 && regex.test(resLine)) {
         const valueX = document.querySelector('input[type="number"]').value;
         const url = `/Home/Calculate?line=${resLine}&xVal=${valueX}`;

@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\WebCalcServ.props" />
+  <Import Project="../build/WebCalcServ.props" />
 </Project>

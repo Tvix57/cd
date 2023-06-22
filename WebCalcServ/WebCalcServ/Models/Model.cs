@@ -6,14 +6,14 @@ using System.Text.RegularExpressions;
 
 namespace WebCalcServ.Models;
 
-public class Model : INotifyPropertyChanged
+public class Model
 {
     public string RawString
     {
         get { return _raw; }
         set { _raw = value; }
     }
-    private string _raw = "";
+    private string _raw = String.Empty;
     readonly static string s_path = Path.Combine(Directory.GetCurrentDirectory(), ".history.log");
     public List<string> History { get; private set; } = new();
     [StructLayout(LayoutKind.Explicit)]
@@ -45,7 +45,7 @@ public class Model : INotifyPropertyChanged
         unsafe lexeme_t* tail;
     }
     private unsafe Deque* rpn = null;
-    public event PropertyChangedEventHandler? PropertyChanged;
+
     [DllImport("Models/lib/ModelLib2")]
     private unsafe static extern Deque* init_deque();
     [DllImport("Models/lib/ModelLib2")]
@@ -55,7 +55,8 @@ public class Model : INotifyPropertyChanged
     [DllImport("Models/lib/ModelLib2")]
     private unsafe static extern void d_free(Deque* deq);
 
-    public Model() {
+    public Model()
+    {
         loadHistory();
     }
 
@@ -145,13 +146,7 @@ public class Model : INotifyPropertyChanged
         {
             File.Delete(s_path);
             History.Clear();
-            OnPropertyChanged();
         }
-    }
-
-    private void OnPropertyChanged([CallerMemberName] string? propertyName = null)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 
     ~Model()

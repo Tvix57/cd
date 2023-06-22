@@ -12,7 +12,6 @@ public class HomeController : Controller
     private Model _model;
     private readonly ILogger<HomeController> _logger;
 
-
     public HomeController(ILogger<HomeController> logger, Model myModel)
     {
         _logger = logger;
@@ -31,7 +30,8 @@ public class HomeController : Controller
     public IActionResult Calculate()
     {
         CalculateData data = new CalculateData();
-        _model.RawString = Request.Query["line"].ToString(); 
+        
+        _model.RawString = Uri.UnescapeDataString(Request.Query["line"].ToString()); 
         string XValue = Request.Query["xVal"].ToString();
         data.RawLine = _model.RawString;
         if (_model.RawString.Contains("x"))

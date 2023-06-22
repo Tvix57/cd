@@ -169,7 +169,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Maui.Graphics/7.0.86": {
+      "Microsoft.Maui.Graphics/7.0.59": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.Maui.Graphics.dll": {
@@ -2275,10 +2275,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Maui.Graphics/7.0.86": {
-      "sha512": "v0VB9NhVrJarOzl7BHs2LaFQE+syKQ8o1Wbs+I4CGxmQO4cosmoFPUa0ogp1oaJe8Tazu504+P8JDy8fhDsSKQ==",
+    "Microsoft.Maui.Graphics/7.0.59": {
+      "sha512": "a5eOfzqeHeERBmQ6g3uU+p4GEwHtBXxQ1s58XIiHCMf/WGCn5HX9z17VLUz6qr2ELVf/BbZ9bFUzVef+kbxkvQ==",
       "type": "package",
-      "path": "microsoft.maui.graphics/7.0.86",
+      "path": "microsoft.maui.graphics/7.0.59",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2314,7 +2314,7 @@
         "lib/netstandard2.1/Microsoft.Maui.Graphics.dll",
         "lib/netstandard2.1/Microsoft.Maui.Graphics.pdb",
         "lib/netstandard2.1/Microsoft.Maui.Graphics.xml",
-        "microsoft.maui.graphics.7.0.86.nupkg.sha512",
+        "microsoft.maui.graphics.7.0.59.nupkg.sha512",
         "microsoft.maui.graphics.nuspec"
       ]
     },
@@ -6003,7 +6003,7 @@
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
       "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
-      "Microsoft.Maui.Graphics >= 7.0.86",
+      "Microsoft.Maui.Graphics >= 7.0.59",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "WebCalcServ >= 1.0.0",
       "coverlet.collector >= 3.2.0",
@@ -6012,40 +6012,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AST\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/opt/goinfre/ajhin/nugets": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AST\\Documents\\GitHub\\cd\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "/opt/goinfre/ajhin/github/cd/UnitTests/UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "C:\\Users\\AST\\Documents\\GitHub\\cd\\UnitTests\\UnitTests.csproj",
-      "packagesPath": "C:\\Users\\AST\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AST\\Documents\\GitHub\\cd\\UnitTests\\obj\\",
+      "projectPath": "/opt/goinfre/ajhin/github/cd/UnitTests/UnitTests.csproj",
+      "packagesPath": "/opt/goinfre/ajhin/nugets",
+      "outputPath": "/opt/goinfre/ajhin/github/cd/UnitTests/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\AST\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/ajhin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\AST\\Documents\\GitHub\\cd\\WebCalcServ\\WebCalcServ\\WebCalcServ.csproj": {
-              "projectPath": "C:\\Users\\AST\\Documents\\GitHub\\cd\\WebCalcServ\\WebCalcServ\\WebCalcServ.csproj"
+            "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/WebCalcServ.csproj": {
+              "projectPath": "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/WebCalcServ.csproj"
             }
           }
         }
@@ -6061,28 +6054,33 @@
         "targetAlias": "net7.0",
         "dependencies": {
           "Microsoft.Extensions.Configuration": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.0, )",
             "autoReferenced": true
           },
           "Microsoft.Extensions.DependencyInjection": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.0, )",
             "autoReferenced": true
           },
           "Microsoft.Extensions.Logging": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.0, )",
             "autoReferenced": true
           },
           "Microsoft.Extensions.Logging.Abstractions": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.0, )",
             "autoReferenced": true
           },
           "Microsoft.Maui.Graphics": {
+            "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.86, )",
+            "version": "[7.0.59, )",
             "autoReferenced": true
           },
           "Microsoft.NET.Test.Sdk": {
@@ -6131,7 +6129,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }
