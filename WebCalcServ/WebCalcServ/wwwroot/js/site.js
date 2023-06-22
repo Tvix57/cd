@@ -149,5 +149,6 @@ function ClearHistory() {
 }
 
 function AddFromLabel(text) {
-
+    var OutLine = document.getElementById("ResultLine");
+    OutLine.innerHTML = text;
 }

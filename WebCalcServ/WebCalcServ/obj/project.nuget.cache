@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FC5DfH+Jw0JOTW9PkJUgizIJmH1LsUW7KcoPdqEW5vXg1caAjv5RgYaOYt2LfKlDYjve8YhgvQCFDoDU8bqegA==",
+  "dgSpecHash": "JGnolD53XDc2O7LualmmWCgbMPGbSjGHI+GWsRP0/P3yJhjFAEErCSbEqiO/KI4l+J8qJgU0IHCEcd+m++ZLRQ==",
   "success": true,
-  "projectFilePath": "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/WebCalcServ.csproj",
+  "projectFilePath": "C:\\Users\\AST\\Documents\\GitHub\\cd\\WebCalcServ\\WebCalcServ\\WebCalcServ.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

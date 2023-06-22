@@ -1,26 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/WebCalcServ.csproj": {}
+    "C:\\Users\\AST\\Documents\\GitHub\\cd\\WebCalcServ\\WebCalcServ\\WebCalcServ.csproj": {}
   },
   "projects": {
-    "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/WebCalcServ.csproj": {
+    "C:\\Users\\AST\\Documents\\GitHub\\cd\\WebCalcServ\\WebCalcServ\\WebCalcServ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/WebCalcServ.csproj",
+        "projectUniqueName": "C:\\Users\\AST\\Documents\\GitHub\\cd\\WebCalcServ\\WebCalcServ\\WebCalcServ.csproj",
         "projectName": "WebCalcServ",
-        "projectPath": "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/WebCalcServ.csproj",
-        "packagesPath": "/opt/goinfre/ajhin/nugets",
-        "outputPath": "/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/obj/",
+        "projectPath": "C:\\Users\\AST\\Documents\\GitHub\\cd\\WebCalcServ\\WebCalcServ\\WebCalcServ.csproj",
+        "packagesPath": "C:\\Users\\AST\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AST\\Documents\\GitHub\\cd\\WebCalcServ\\WebCalcServ\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/ajhin/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\AST\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

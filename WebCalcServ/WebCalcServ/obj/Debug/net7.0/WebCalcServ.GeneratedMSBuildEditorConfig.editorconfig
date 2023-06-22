@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebCalcServ
 build_property.RootNamespace = WebCalcServ
-build_property.ProjectDir = /opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/
+build_property.ProjectDir = C:\Users\AST\Documents\GitHub\cd\WebCalcServ\WebCalcServ\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ
+build_property.MSBuildProjectDirectory = C:\Users\AST\Documents\GitHub\cd\WebCalcServ\WebCalcServ
 build_property._RazorSourceGeneratorDebug = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Graph/Graph.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3JhcGgvR3JhcGguY3NodG1s
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/Graph/Graph.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhcGhcR3JhcGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Home/About.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Home/Calculator.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DYWxjdWxhdG9yLmNzaHRtbA==
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/Home/Calculator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWxjdWxhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Shared/GraphInput.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0dyYXBoSW5wdXQuY3NodG1s
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/Shared/GraphInput.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdyYXBoSW5wdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Shared/GraphOutput.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0dyYXBoT3V0cHV0LmNzaHRtbA==
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/Shared/GraphOutput.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdyYXBoT3V0cHV0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Shared/_CalcInput.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DYWxjSW5wdXQuY3NodG1s
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/Shared/_CalcInput.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYWxjSW5wdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Shared/_CalcOutput.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DYWxjT3V0cHV0LmNzaHRtbA==
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/Shared/_CalcOutput.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYWxjT3V0cHV0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/opt/goinfre/ajhin/github/cd/WebCalcServ/WebCalcServ/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-u219y3k1ch
+[C:/Users/AST/Documents/GitHub/cd/WebCalcServ/WebCalcServ/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gseelv2tj5

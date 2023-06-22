@@ -10,7 +10,7 @@
         @{ if (@Model.History?.Count > 0)
             @foreach (string expression in Model.History)
             {
-                <label class="history">@expression</label>
+                <label class="history" onclick="AddFromLabel(this.innerHTML)">@expression</label>
             }
          }
     </div>
