@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1705.2
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCalcServ", "WebCalcServ\WebCalcServ.csproj", "{7D639869-E4B3-4138-931D-DCA4FF3AF98C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCalcServ", "WebCalcServ\WebCalcServ.csproj", "{7D639869-E4B3-4138-931D-DCA4FF3AF98C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "..\UnitTests\UnitTests.csproj", "{76444200-EEE4-4383-BD52-4B25A4BF98D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7D639869-E4B3-4138-931D-DCA4FF3AF98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D639869-E4B3-4138-931D-DCA4FF3AF98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D639869-E4B3-4138-931D-DCA4FF3AF98C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76444200-EEE4-4383-BD52-4B25A4BF98D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76444200-EEE4-4383-BD52-4B25A4BF98D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76444200-EEE4-4383-BD52-4B25A4BF98D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76444200-EEE4-4383-BD52-4B25A4BF98D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

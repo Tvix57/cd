@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DesckCalcSH\DesckCalcSH.csproj" />
+    <ProjectReference Include="..\WebCalcServ\WebCalcServ\WebCalcServ.csproj" />
   </ItemGroup>
 
 </Project>
